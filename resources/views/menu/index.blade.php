@@ -11,7 +11,7 @@
 @section('content')
 
     
-    <div class="welcome-jumbo">
+    <div>
        
         <h1>Menu Page</h1>
        

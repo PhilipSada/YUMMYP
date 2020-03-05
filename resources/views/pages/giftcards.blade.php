@@ -11,7 +11,7 @@
 @section('content')
 
     
-    <div class="welcome-jumbo">
+    <div>
        
         <h1>Gift Cards Page</h1>
        
