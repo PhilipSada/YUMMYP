@@ -4,6 +4,9 @@
 @import "reset";
 @import "home";
 @import "pages/about";
+@import "pages/waitlist";
+@import "pages/offers";
+@import "menu/index";
 
 
 
@@ -134,7 +137,8 @@ body {
     max-width:calc(100vw - 300px);
     background:rgba(0, 0, 0, 0.836);
     transform:translate3d(300px, 0, 0);
-    overflow: hidden;
+    overflow-y: scroll;
+    // overflow: hidden;
   
    
   }
@@ -325,7 +329,10 @@ body {
   }
 }
  
-
+.content-box{
+    background:white;
+    padding:20px;
+}
 
 h2{
   font-size:3rem;

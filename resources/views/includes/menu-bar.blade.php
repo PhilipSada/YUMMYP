@@ -7,7 +7,6 @@
         <li><a href="{{url('/menu')}}">Food</a></li>
         <li><a href="{{url('/about')}}">About Us</a></li>
         <li><a href="{{url('/waitlist')}}">Waitlist</a></li>
-        <li><a href="{{url('/giftcards')}}">Giftcards</a></li>
         <li><a href="{{url('/offers')}}">Offers</a></li>
     </ul>
     </div>
