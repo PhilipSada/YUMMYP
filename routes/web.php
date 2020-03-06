@@ -20,6 +20,9 @@ Route::get('/', function () {
 Route::get('/menu', function () {
     return view('menu/index');
 });
+Route::get('/menu/{slug}', function () {
+    return view('menu/single-menu');
+});
 Route::get('/waitlist', function () {
     return view('pages/waitlist');
 });
