@@ -25,7 +25,7 @@
                      Ratione debitis pariatur atque eveniet sapiente amet vel nemo illum eligendi dolore?
                      </p>
                      <div class="food-image">
-                       <img src="<?= asset('images/chips.png') ?>">
+                       <img src="<?= asset('/images/chips.png') ?>">
                      </div>
                  </div>  
               </div>
@@ -40,7 +40,7 @@
                      Ratione debitis pariatur atque eveniet sapiente amet vel nemo illum eligendi dolore?
                      </p>
                      <div class="food-image">
-                       <img src="<?= asset('images/burger.png') ?>">
+                       <img src="<?= asset('/images/burger.png') ?>">
                      </div>
                  </div>  
               </div>
@@ -56,7 +56,7 @@
                      Ratione debitis pariatur atque eveniet sapiente amet vel nemo 
                      </p>
                      <div class="food-image">
-                       <img src="<?= asset('images/steak.png') ?>">
+                       <img src="<?= asset('/images/steak.png') ?>">
                      </div>
                  </div>  
               </div>
@@ -72,7 +72,7 @@
                      Ratione 
                      </p>
                      <div class="food-image">
-                       <img src="<?= asset('images/salad.png') ?>">
+                       <img src="<?= asset('/images/salad.png') ?>">
                      </div>
                  </div>  
               </div>
@@ -87,7 +87,7 @@
                      Ratione debitis pariatur atque eveniet sapiente amet vel nemo illum eligendi dolore?
                      </p>
                      <div class="food-image">
-                       <img src="<?= asset('images/pancakes.png') ?>">
+                       <img src="<?= asset('/images/pancakes.png') ?>">
                      </div>
                  </div>  
               </div>
@@ -117,7 +117,7 @@
                     
                      </p>
                      <div class="food-image">
-                       <img src="<?= asset('images/cola.png') ?>">
+                       <img src="<?= asset('/images/cola.png') ?>">
                      </div>
                  </div>  
               </div>
