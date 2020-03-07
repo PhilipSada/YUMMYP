@@ -1,13 +1,14 @@
 <div class="side-menu">
 
-    <a href="{{url('/')}}"class="logo"><img src="<?= asset('images/logo.png') ?>"></a>
+    <a href="/"class="logo"><img src="/images/logo.png"></a>
     <div class="menu">
     <div class="menu-title">Menu</div>
     <ul class="links">
-        <li><a href="{{url('/menu')}}">Food</a></li>
-        <li><a href="{{url('/about')}}">About Us</a></li>
-        <li><a href="{{url('/waitlist')}}">Waitlist</a></li>
-        <li><a href="{{url('/offers')}}">Offers</a></li>
+        <li><a href="/menu">Food</a></li>
+        <li><a href="/about">About Us</a></li>
+        <li><a href="/reservations">Reservations</a></li>
+        <li><a href="/offers">Offers</a></li>
+        <li><a href="/contact">Contact</a></li>
     </ul>
     </div>
     <div class="social-icons">
