@@ -8,13 +8,13 @@
            <div class="row">
                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                    <div class="page-header">
-                       <h2 class="pageheader-title">All Reservations</h2>
+                       <h2 class="pageheader-title">Users</h2>
                        <p class="pageheader-text">Proin placerat ante duiullam scelerisque a velit ac porta, fusce sit amet vestibulum mi. Morbi lobortis pulvinar quam.</p>
                        <div class="page-breadcrumb">
                            <nav aria-label="breadcrumb">
                                <ol class="breadcrumb">
                                    <li class="breadcrumb-item"><a href="/admin" class="breadcrumb-link">Dashboard</a></li>
-                                   <li class="breadcrumb-item active" aria-current="page">All Reservations</li>
+                                   <li class="breadcrumb-item active" aria-current="page">Users</li>
                                </ol>
                            </nav>
                        </div>
@@ -31,26 +31,26 @@
                    <!-- ============================================================== -->
                    <div class="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-12">
                        <div class="card">
-                           <h5 class="card-header">Reservations</h5>
+                           <h5 class="card-header">All Users</h5>
                            <div class="card-body">
                                <table class="table">
                                    <thead>
                                        <tr>
                                            <th scope="col">Id</th>
-                                           <th scope="col">Full Name</th>
                                            <th scope="col">Email</th>
-                                           <th scope="col">Phone Number</th>
-                                           <th scope="col">Guest Total</th>
                                            <th scope="col">Date Created</th>
+                                           <th scope="col">Edit</th>
+                                           <th scope="col">Delete</th>
                                        </tr>
                                    </thead>
                                    <tbody>
                                        <tr>
                                            <th scope="row">1</th>
-                                           <td>andrew smith</td>
-                                           <td>andrew@gmail.com</td>
-                                           <td>012-37373734</td>
-                                           <td>2/2/2020</td>  
+                                           <td>Burgers.admin@email.com</td>
+                                           <td>2/2/2020</td>
+                                           <td><a href="/admin/users/1/edit"><i class="far fa-edit"></i></a></td>
+                                           <td><a href="/admin/users/1/delete" 
+                                           onclick="if(! confirm('Are you sure you want to delete this user?')){return false}"><i class="far fa-trash-alt"></i></a></td>
                                        </tr>
                                    </tbody>
                                </table>
