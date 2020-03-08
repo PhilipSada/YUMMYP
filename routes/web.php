@@ -46,3 +46,7 @@ Route::get('/admin/users/{id}/edit','admin\UsersController@edit');
 //admin customers
 Route::get('/admin/offers-members', 'admin\CustomersController@allOffersMembers');
 Route::get('/admin/reservations','admin\CustomersController@allReservations');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
