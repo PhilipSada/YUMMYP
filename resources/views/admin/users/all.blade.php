@@ -37,6 +37,7 @@
                                    <thead>
                                        <tr>
                                            <th scope="col">Id</th>
+                                           <th scope="col">Name</th>
                                            <th scope="col">Email</th>
                                            <th scope="col">Date Created</th>
                                            <th scope="col">Edit</th>
@@ -44,16 +45,20 @@
                                        </tr>
                                    </thead>
                                    <tbody>
+                                       @foreach($users as $user)
                                        <tr>
-                                           <th scope="row">1</th>
-                                           <td>Burgers.admin@email.com</td>
-                                           <td>2/2/2020</td>
-                                           <td><a href="/admin/users/1/edit"><i class="far fa-edit"></i></a></td>
-                                           <td><a href="/admin/users/1/delete" 
+                                           <th scope="row">{{$user->id}}</th>
+                                           <th>{{$user->firstname}} {{$user->lastname}}</th>
+                                           <td>{{$user->email}}</td>
+                                           <td>{{date('m/d/y', strtotime($user->updated_at))}}</td>
+                                           <td><a href="/admin/users/{{$user->id}}/edit"><i class="far fa-edit"></i></a></td>
+                                           <td><a href="/admin/users/{{$user->id}}/delete" 
                                            onclick="if(! confirm('Are you sure you want to delete this user?')){return false}"><i class="far fa-trash-alt"></i></a></td>
                                        </tr>
+                                       @endforeach
                                    </tbody>
                                </table>
+                               {{ $users->links() }}
                            </div>
                        </div>
                    </div>
