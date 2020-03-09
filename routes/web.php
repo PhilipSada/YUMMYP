@@ -38,11 +38,14 @@ Route::get('/admin/food-items', 'admin\FoodItemsController@index');
 Route::get('/admin/food-items/create','admin\FoodItemsController@create');
 Route::get('/admin/food-items/{id}/edit','admin\FoodItemsController@edit');
 
+
 //admin users
 Route::get('/admin/users', 'admin\UsersController@index');
 Route::get('/admin/users/create','admin\UsersController@create');
 Route::post('/admin/users','admin\UsersController@store');
 Route::get('/admin/users/{id}/edit','admin\UsersController@edit');
+Route::put('/admin/users/{id}','admin\UsersController@update');
+Route::get('/admin/users/{id}/delete','admin\UsersController@delete');
 
 //admin customers
 Route::get('/admin/offers-members', 'admin\CustomersController@allOffersMembers');
