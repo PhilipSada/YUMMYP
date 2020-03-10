@@ -29,7 +29,14 @@ class UsersController extends Controller
         ]);
     }
     public function store(){
-        //request() gets the input value (name given to the input)
+        request()->validate([
+            'firstname' => ['required', 'string', 'max:255'],
+            'lastname' => ['required', 'string', 'max:255'],
+            'email' => ['required', 'string', 'email', 'max:255'],
+            'password' => ['required', 'string', 'min:8', 'confirmed'],
+            'role_id' => ['required'],
+        ]);
+        
         $user = new User();
         $user->firstname = request('firstname');
         $user->lastname = request('lastname');

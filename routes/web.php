@@ -31,15 +31,19 @@ Route::get('/admin/login', 'admin\AdminController@login');
 //admin Food Categories
 Route::get('/admin/food-categories', 'admin\FoodCategoriesController@index');
 Route::get('/admin/food-categories/create','admin\FoodCategoriesController@create');
+Route::post('/admin/food-categories','admin\FoodCategoriesController@store');
 Route::get('/admin/food-categories/{id}/edit','admin\FoodCategoriesController@edit');
 Route::put('/admin/food-categories/{id}','admin\FoodCategoriesController@update');
+Route::get('/admin/food-categories/{id}/delete','admin\FoodCategoriesController@delete');
+
 
 //admin Food Items
 Route::get('/admin/food-items', 'admin\FoodItemsController@index');
 Route::get('/admin/food-items/create','admin\FoodItemsController@create');
+Route::post('/admin/food-items','admin\FoodItemsController@store');
 Route::get('/admin/food-items/{id}/edit','admin\FoodItemsController@edit');
-Route::put('/admin/food-items/{id}/edit','admin\FoodItemsController@update');
-
+Route::put('/admin/food-items/{id}','admin\FoodItemsController@update');
+Route::get('/admin/food-items/{id}/delete','admin\FoodItemsController@delete');
 
 //admin users
 Route::get('/admin/users', 'admin\UsersController@index');
