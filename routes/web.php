@@ -54,7 +54,10 @@ Route::put('/admin/users/{id}','admin\UsersController@update');
 Route::get('/admin/users/{id}/delete','admin\UsersController@delete');
 
 //admin customers
-Route::get('/admin/offers-members', 'admin\CustomersController@allOffersMembers');
+//offers members
+Route::get('/admin/members', 'admin\MemberController@index');
+
+//reservations members
 Route::get('/admin/reservations','admin\CustomersController@allReservations');
 
 Auth::routes();
