@@ -33,33 +33,56 @@
                                  <div class="card">
                                      <h5 class="card-header">Edit category</h5>
                                      <div class="card-body">
-                                         <form action="#" id="basicform" data-parsley-validate="" novalidate="">
-                                             <div class="form-group">
-                                                 <label for="inputCategoryName">Category Name</label>
-                                                 <input id="inputCategoryName" type="text" name="category" data-parsley-trigger="change" required="" placeholder="Enter category name" autocomplete="off" class="form-control">
-                                             </div>
-                                             <div class="form-group">
-                                                 <label for="inputCategoryImage">Category Image Url</label>
-                                                 <input id="inputCategoryImage" type="text" name="image_url" data-parsley-trigger="change" required="" placeholder="http://www.phillstreat.com/img/burgers.png" autocomplete="off" class="form-control">
-                                             </div>
-                                             <div class="row">
-                                                 <div class="col-sm-6 pb-2 pb-sm-4 pb-lg-0 pr-0">
-                                                     
-                                                 </div>
-                                                 <div class="col-sm-6 pl-0">
-                                                     <p class="text-right">
-                                                         <button type="submit" class="btn btn-space btn-primary">Edit</button>
-                                                        
-                                                     </p>
-                                                 </div>
-                                             </div>
-                                         </form>
+                                        <form method="POST" action="/admin/food-categories/{{$foodCategory->id}}">
+                                            @csrf
+                                            @method('PUT')
+                                            <div class="form-group">
+                                                <label for="inputTitle">Title</label>
+                                                <input id="inputTitle" type="text" class="form-control form-control-lg @error('title') is-invalid @enderror" name="title" value="{{ old('title', $foodCategory->title) }}" 
+                                                required autocomplete="name" placeholder="Title" autofocus >
+
+                                                       @error('title')
+                                                           <span class="invalid-feedback" role="alert">
+                                                               <strong>{{ $message }}</strong>
+                                                           </span>
+                                                       @enderror
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="inputDescription">Description</label>
+                                                <input id="inputDescription" type="text" class="form-control form-control-lg @error('description') is-invalid @enderror" name="description" value="{{ old('description', $foodCategory->description) }}" 
+                                                required autocomplete="name" placeholder="Description" autofocus >
+                    
+                                                @error('description')
+                                                    <span class="invalid-feedback" role="alert">
+                                                        <strong>{{ $message }}</strong>
+                                                    </span>
+                                                @enderror
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="inputImageUrl">Image Url</label>
+                                                <input id="inputImageUrl" type="text" class="form-control form-control-lg @error('image_url') is-invalid @enderror" name="image_url" value="{{ old('image_url', $foodCategory->image_url) }}" required autocomplete="image_url" placeholder="image_url">
+
+                                                @error('image_url')
+                                                    <span class="invalid-feedback" role="alert">
+                                                        <strong>{{ $message }}</strong>
+                                                    </span>
+                                                @enderror
+                                            </div>
+                                          
+                                            <div class="row">
+                                                <div class="col-sm-6 pb-2 pb-sm-4 pb-lg-0 pr-0">
+                                                    
+                                                </div>
+                                                <div class="col-sm-6 pl-0">
+                                                    <p class="text-right">
+                                                        <button type="submit" class="btn btn-space btn-primary">Edit</button> 
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </form>
                                      </div>
                                  </div>
                              </div>
-                            
-                          
-                
                  </div>
        </div>
       
