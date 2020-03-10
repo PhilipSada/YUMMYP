@@ -20,6 +20,8 @@ Route::get('/menu/{slug}','StaticPagesController@singleMenu');
 Route::get('/reservations','StaticPagesController@reservations');
 Route::get('/contact', 'StaticPagesController@contact');
 Route::get('/offers', 'StaticPagesController@offers');
+Route::post('/offers', 'StaticPagesController@registerMember');
+Route::get('/offers/thanks', 'StaticPagesController@offersThankYou');
 Route::get('/about', 'StaticPagesController@about');
 
 //admin Dashboard

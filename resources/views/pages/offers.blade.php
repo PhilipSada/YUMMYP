@@ -11,32 +11,57 @@
           <div class="row">
               <div class="col-md-8 offset-md-2">
                 <h1>Get Offers</h1>
-                <form>
+                <form method="POST" action="/offers">
+                    @csrf
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label for="firstnameinput">First Name</label>
-                                <input type="text" class="form-control" id="firstnameinput" name="firstname" placeholder="John">
+                                <label for="inputfirstname">First Name</label>
+                                <input id="inputfirstname" type="text" class="form-control form-control-lg @error('firstname') is-invalid @enderror" name="firstname" value="{{ old('firstname') }}" 
+                                required autocomplete="firstname" placeholder="John" autofocus >
+                                @error('firstname')
+                                    <span class="invalid-feedback" role="alert">
+                                         <strong>{{ $message }}</strong>
+                                    </span>
+                               @enderror
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label for="lastnameinput">Last Name</label>
-                                <input type="text" class="form-control" name="lastname" id="lastnameinput" placeholder="Smith">
+                                <label for="inputlastname">Last Name</label>
+                                <input id="inputlastname" type="text" class="form-control form-control-lg @error('lastname') is-invalid @enderror" name="lastname" value="{{ old('lastname') }}" 
+                                required autocomplete="lastname" placeholder="Doe" autofocus >
+                                @error('lastname')
+                                    <span class="invalid-feedback" role="alert">
+                                         <strong>{{ $message }}</strong>
+                                    </span>
+                               @enderror
                             </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label for="emailinput">Email address</label>
-                                <input type="email" class="form-control" id="emailinput" name="email" placeholder="name@example.com">
+                                <label for="inputEmail">Email Address</label>
+                                <input id="inputEmail" type="email" class="form-control form-control-lg @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" placeholder="johndoe@gmail.com">
+
+                                @error('email')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label for="phoneinput">Phone Number</label>
-                                <input type="text" class="form-control" name="phone" id="phoneinput" placeholder="718-298-5678">
+                                <label for="inputphone">Phone Number</label>
+                                <input id="inputphone" type="tel" class="form-control form-control-lg @error('phone_number') is-invalid @enderror" name="phone_number" value="{{ old('phone_number') }}" required autocomplete="phone_number" placeholder="+497878787845">
+
+                                @error('phone_number')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
                             </div>
                         </div>
                     </div>

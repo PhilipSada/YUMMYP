@@ -40,17 +40,18 @@
                                            <th scope="col">Full Name</th>
                                            <th scope="col">Email</th>
                                            <th scope="col">Phone Number</th>
-                                           <th scope="col">Date Created</th>
+                                           <th scope="col">Date</th>
                                        </tr>
                                    </thead>
                                    <tbody>
-                                       <tr>
-                                           <th scope="row">1</th>
-                                           <td>andrew smith</td>
-                                           <td>andrew@gmail.com</td>
-                                           <td>012-37373734</td>
-                                           <td>2/2/2020</td>
-                                       </tr>
+                                    @foreach($members as $member)
+                                    <tr>
+                                        <th scope="row">{{$member->id}}</th>
+                                        <th>{{$member->firstname}} {{$member->lastname}}</th>
+                                        <td>{{$member->email}}</td>
+                                        <td>{{$member->phone_number}}</td>
+                                        <td>{{date('m/d/y', strtotime($member->updated_at))}}</td>
+                                    @endforeach
                                    </tbody>
                                </table>
                            </div>
