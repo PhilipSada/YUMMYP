@@ -18,6 +18,7 @@ Route::get('/', 'StaticPagesController@home');
 Route::get('/menu', 'StaticPagesController@menu');
 Route::get('/menu/{slug}','StaticPagesController@singleMenu');
 Route::get('/reservations','StaticPagesController@reservations');
+Route::postt('/reservations','StaticPagesController@saveReservations');
 Route::get('/contact', 'StaticPagesController@contact');
 Route::get('/offers', 'StaticPagesController@offers');
 Route::post('/offers', 'StaticPagesController@registerMember');
@@ -58,9 +59,15 @@ Route::get('/admin/users/{id}/delete','admin\UsersController@delete');
 //admin customers
 //offers members
 Route::get('/admin/members', 'admin\MemberController@index');
+Route::get('/admin/members/{id}/delete', 'admin\MemberController@delete');
 
 //reservations members
-Route::get('/admin/reservations','admin\CustomersController@allReservations');
+Route::get('/admin/reservations','admin\ReservationController@index');
+Route::get('/admin/reservations/create','admin\ReservationController@create');
+Route::post('/admin/reservations','admin\ReservationController@store');
+Route::get('/admin/reservations/{id}/edit','admin\ReservationController@edit');
+Route::put('/admin/reservations/{id}','admin\ReservationController@update');
+Route::get('/admin/reservations/{id}/delete','admin\ReservationController@delete');
 
 Auth::routes();
 

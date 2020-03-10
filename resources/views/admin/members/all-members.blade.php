@@ -41,6 +41,7 @@
                                            <th scope="col">Email</th>
                                            <th scope="col">Phone Number</th>
                                            <th scope="col">Date</th>
+                                           <th scope="col">Delete</th>
                                        </tr>
                                    </thead>
                                    <tbody>
@@ -51,9 +52,12 @@
                                         <td>{{$member->email}}</td>
                                         <td>{{$member->phone_number}}</td>
                                         <td>{{date('m/d/y', strtotime($member->updated_at))}}</td>
+                                        <td><a href="/admin/members/{{$member->id}}/delete" 
+                                            onclick="if(! confirm('Are you sure you want to delete this member?')){return false}"><i class="far fa-trash-alt"></i></a></td>
                                     @endforeach
                                    </tbody>
                                </table>
+                               {{ $members->links() }}
                            </div>
                        </div>
                    </div>

@@ -45,13 +45,19 @@
                                        </tr>
                                    </thead>
                                    <tbody>
-                                       <tr>
-                                           <th scope="row">1</th>
-                                           <td>andrew smith</td>
-                                           <td>andrew@gmail.com</td>
-                                           <td>012-37373734</td>
-                                           <td>2/2/2020</td>  
-                                       </tr>
+                                    @foreach($reservations as $reservation)
+                                    <tr>
+                                        <th scope="row">{{$reservation->id}}</th>
+                                        <td>{{$reservation->firstname}} {{$reservation->lastname}}</td>
+                                        <th>{{$reservation->email}}</th>
+                                        <td>{{$reservation->phone_number}}</td>
+                                        <td>{{$reservation->guests_total}}</td>
+                                        <td>{{date('m/d/y', strtotime($reservations->updated_at))}}</td>
+                                        <td><a href="/admin/reservations/{{$reservation->id}}/edit"><i class="far fa-edit"></i></a></td>
+                                        <td><a href="/admin/reservations/{{$reservation->id}}/delete" 
+                                        onclick="if(! confirm('Are you sure you want to delete this reservation?')){return false}"><i class="far fa-trash-alt"></i></a></td>
+                                    </tr>
+                                    @endforeach
                                    </tbody>
                                </table>
                            </div>
