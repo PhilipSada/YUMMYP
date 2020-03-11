@@ -9,14 +9,14 @@
                      <div class="row">
                          <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                              <div class="page-header">
-                                 <h2 class="pageheader-title">Edit Food Item </h2>
+                                 <h2 class="pageheader-title">Edit Reservation </h2>
                                  <p class="pageheader-text">Proin placerat ante duiullam scelerisque a velit ac porta, fusce sit amet vestibulum mi. Morbi lobortis pulvinar quam.</p>
                                  <div class="page-breadcrumb">
                                      <nav aria-label="breadcrumb">
                                          <ol class="breadcrumb">
                                              <li class="breadcrumb-item"><a href="/admin" class="breadcrumb-link">Dashboard</a></li>
-                                             <li class="breadcrumb-item"><a href="/admin/food-items" class="breadcrumb-link">All Food Items</a></li>
-                                             <li class="breadcrumb-item active" aria-current="page">Edit Food Item</li>
+                                             <li class="breadcrumb-item"><a href="/admin/reservations" class="breadcrumb-link">All Reservations</a></li>
+                                             <li class="breadcrumb-item active" aria-current="page">Edit Reservation</li>
                                          </ol>
                                      </nav>
                                  </div>
@@ -31,87 +31,84 @@
                          <div class="row">
                              <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
                                  <div class="card">
-                                     <h5 class="card-header">Edit food item</h5>
+                                     <h5 class="card-header">Edit Reservation</h5>
                                      <div class="card-body">
-                                        <form method="POST" action="/admin/food-items/{{$foodItem->id}}">
+                                        <form method="POST" action="/admin/reservations">
                                             @csrf
-                                            @method('PUT')
-                                            <div class="form-group">
-                                                <label for="inputCategoryId">Category Id</label>
-                                                <input id="inputCategoryId" type="text" class="form-control form-control-lg @error('category_id') is-invalid @enderror" name="category_id" value="{{ old('category_id', $foodItem->category_id) }}" 
-                                                required autocomplete="name" placeholder="category_id" autofocus >
-                    
-                                                @error('category_id')
+                                              <div class="form-group">
+                                                <label for="inputfirstname">First Name</label>
+                                                <input id="inputfirstname" type="text" class="form-control form-control-lg @error('firstname') is-invalid @enderror" name="firstname" value="{{ old('firstname', $reservation->firstname) }}" 
+                                                required autocomplete="firstname" placeholder="John" autofocus >
+                                                @error('firstname')
+                                                    <span class="invalid-feedback" role="alert">
+                                                         <strong>{{ $message }}</strong>
+                                                    </span>
+                                               @enderror
+                                              </div>
+                                              <div class="form-group">
+                                                <label for="inputlastname">Last Name</label>
+                                                <input id="inputlastname" type="text" class="form-control form-control-lg @error('lastname') is-invalid @enderror" name="lastname" value="{{ old('lastname', $reservation->lastname) }}" 
+                                                required autocomplete="lastname" placeholder="Doe" autofocus >
+                                                @error('lastname')
+                                                    <span class="invalid-feedback" role="alert">
+                                                         <strong>{{ $message }}</strong>
+                                                    </span>
+                                               @enderror
+                                              </div>
+                                              <div class="form-group">
+                                                <label for="inputEmail">Email Address</label>
+                                                <input id="inputEmail" type="email" class="form-control form-control-lg @error('email') is-invalid @enderror" name="email" value="{{ old('email', $reservation->email) }}" required autocomplete="email" placeholder="johndoe@gmail.com">
+                          
+                                                @error('email')
                                                     <span class="invalid-feedback" role="alert">
                                                         <strong>{{ $message }}</strong>
                                                     </span>
                                                 @enderror
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="inputTitle">Title</label>
-                                                <input id="inputTitle" type="text" class="form-control form-control-lg @error('title') is-invalid @enderror" name="title" value="{{ old('title', $foodItem->title) }}" 
-                                                required autocomplete="name" placeholder="Title" autofocus >
-
-                                                       @error('title')
-                                                           <span class="invalid-feedback" role="alert">
-                                                               <strong>{{ $message }}</strong>
-                                                           </span>
-                                                       @enderror
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="inputDescription">Description</label>
-                                                <input id="inputDescription" type="text" class="form-control form-control-lg @error('description') is-invalid @enderror" name="description" value="{{ old('description', $foodItem->description) }}" 
-                                                required autocomplete="name" placeholder="Description" autofocus >
-                    
-                                                @error('description')
+                                              </div>
+                                              <div class="form-group">
+                                                <label for="inputphone">Phone Number</label>
+                                                <input id="inputphone" type="tel" class="form-control form-control-lg @error('phone_number') is-invalid @enderror" name="phone_number" value="{{ old('phone_number', $reservation->phone_number) }}" required autocomplete="phone_number" placeholder="+497878787845">
+                          
+                                                @error('phone_number')
                                                     <span class="invalid-feedback" role="alert">
                                                         <strong>{{ $message }}</strong>
                                                     </span>
                                                 @enderror
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="inputImageUrl">Image Url</label>
-                                                <input id="inputImageUrl" type="text" class="form-control form-control-lg @error('image_url') is-invalid @enderror" name="image_url" value="{{ old('image_url', $foodItem->image_url) }}" required autocomplete="image_url" placeholder="image_url">
-
-                                                @error('image_url')
-                                                    <span class="invalid-feedback" role="alert">
-                                                        <strong>{{ $message }}</strong>
-                                                    </span>
-                                                @enderror
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="inputPrice">Price</label>
-                                                <input id="inputPrice" type="text" class="form-control form-control-lg @error('price') is-invalid @enderror" name="price" value="{{ old('price', $foodItem->price) }}" 
-                                                required autocomplete="name" placeholder="Price" autofocus >
-                    
-                                                @error('price')
-                                                    <span class="invalid-feedback" role="alert">
-                                                        <strong>{{ $message }}</strong>
-                                                    </span>
-                                                @enderror
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="inputFoodCategory">Food Category</label>
-                                              
-                                                <select name="category" class="form-control" id="inputFoodCategory">
-                                                    @foreach($foodCategories as $foodCategory)
-                                                    <option value="{{$foodCategory->id}}" @if($foodCategory->id == $foodItem->id) selected @endif>{{$foodCategory->title}}</option>
-                                                    @endforeach
+                                              </div>
+                                              <div class="form-group">
+                                                <label for="guestinput">How many guests?</label>
+                                                <select class="form-control form-control-lg @error('guests_total') is-invalid @enderror" id="guestinput" name="guests_total">
+                                                  <option>1</option>
+                                                  <option>2</option>
+                                                  <option>3</option>
+                                                  <option>4</option>
+                                                  <option>5</option>
                                                 </select>
-                                                
-                                            </div>
-                                          
-                                            <div class="row">
-                                                <div class="col-sm-6 pb-2 pb-sm-4 pb-lg-0 pr-0">
-                                                    
-                                                </div>
-                                                <div class="col-sm-6 pl-0">
-                                                    <p class="text-right">
-                                                        <button type="submit" class="btn btn-space btn-primary">Edit</button> 
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </form>
+                                                @error('guests_total')
+                                                <span class="invalid-feedback" role="alert">
+                                                    <strong>{{ $message }}</strong>
+                                                </span>
+                                               @enderror
+                                              </div>
+                                              <div class="form-group">
+                                                <label for="timeinput">What time?</label>
+                                                <select  class="form-control form-control-lg @error('time') is-invalid @enderror" id="timeinput" name="time">
+                                                  <option value="6">6:00pm</option>
+                                                  <option value="7">7:00pm</option>
+                                                  <option value="8">8:00pm</option>
+                                                  <option value="9">9:00pm</option>
+                                                  <option value="10">10:00pm</option>
+                                                </select>
+                                                @error('time')
+                                                <span class="invalid-feedback" role="alert">
+                                                    <strong>{{ $message }}</strong>
+                                                </span>
+                                               @enderror
+                                              </div>
+                                              <div class="form-group">
+                                              <button type="submit" class="btn btn-primary mb-2">Edit</button>
+                                              </div>
+                                            </form>
                                      </div>
                                  </div>
                              </div>

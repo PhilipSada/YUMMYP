@@ -65,6 +65,7 @@
                                     @endforeach
                                    </tbody>
                                </table>
+                               {{ $foodItems->links() }}
                            </div>
                        </div>
                    </div>

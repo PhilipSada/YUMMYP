@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Member;
+use App\Reservation;
+
 
 class StaticPagesController extends Controller
 {
@@ -12,6 +14,32 @@ class StaticPagesController extends Controller
     }
     public function reservations(){
         return view('pages/reservations');
+    }
+    public function saveReservations(){
+        request()->validate([
+            'firstname' => ['required', 'string', 'max:255'],
+            'lastname' => ['required', 'string'],
+            'email' => ['required', 'string','email'],
+            'phone_number' => ['required', 'string'],
+            'guests_total' => ['required', 'string'],
+            'time' => ['required']
+            
+        ]);
+        
+        $reservation = new Reservation();
+        $reservation->firstname = request('firstname');
+        $reservation->lastname = request('lastname');
+        $reservation->email = request('email');
+        $reservation->phone_number = request('phone_number');
+        $reservation->guests_total = request('guests_total');
+        $reservation->time = request('time');
+        $reservation->save();
+
+        return redirect('/reservations/reservation-confirmed');
+
+    }
+    public function reservationConfirmation(){
+        return view('pages/reservation-confirmation');
     }
     public function about(){
         return view('pages/about');
@@ -38,11 +66,11 @@ class StaticPagesController extends Controller
         $member->phone_number = request('phone_number');
         $member->save();
 
-        return redirect('/offers/thanks');
+        return redirect('/offers/thank-you');
 
     }
-    public function offersThankYou(){
-        return view('pages/thank-you');
+    public function offersThanks(){
+        return view('pages/thanks');
     }
     public function menu(){
         return view('menu/index');
@@ -50,5 +78,6 @@ class StaticPagesController extends Controller
     public function singleMenu(){
         return view('menu/single-menu');
     }
+   
     
 }

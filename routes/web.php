@@ -18,12 +18,14 @@ Route::get('/', 'StaticPagesController@home');
 Route::get('/menu', 'StaticPagesController@menu');
 Route::get('/menu/{slug}','StaticPagesController@singleMenu');
 Route::get('/reservations','StaticPagesController@reservations');
-Route::postt('/reservations','StaticPagesController@saveReservations');
+Route::post('/reservations','StaticPagesController@saveReservations');
+Route::get('/reservations/reservation-confirmed','StaticPagesController@reservationConfirmation');
 Route::get('/contact', 'StaticPagesController@contact');
 Route::get('/offers', 'StaticPagesController@offers');
 Route::post('/offers', 'StaticPagesController@registerMember');
-Route::get('/offers/thanks', 'StaticPagesController@offersThankYou');
+Route::get('/offers/thank-you', 'StaticPagesController@offersThanks');
 Route::get('/about', 'StaticPagesController@about');
+Route::get('/testing', 'StaticPagesController@testing');
 
 //admin Dashboard
 Route::get('/admin','admin\AdminController@dashboard');

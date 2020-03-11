@@ -48,7 +48,7 @@ class ReservationController extends Controller
     public function edit($id){
         $reservation =Reservation::find($id);
 
-        return view('admin/food-categories/edit', [
+        return view('admin/reservations/edit', [
             'reservation'=>$reservation,
         ]);
     }

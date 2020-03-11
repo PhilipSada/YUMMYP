@@ -41,7 +41,9 @@
                                            <th scope="col">Email</th>
                                            <th scope="col">Phone Number</th>
                                            <th scope="col">Guest Total</th>
+                                           <th scope="col">Time</th>
                                            <th scope="col">Date Created</th>
+                                           <th scope="col">Delete</th>
                                        </tr>
                                    </thead>
                                    <tbody>
@@ -52,14 +54,16 @@
                                         <th>{{$reservation->email}}</th>
                                         <td>{{$reservation->phone_number}}</td>
                                         <td>{{$reservation->guests_total}}</td>
-                                        <td>{{date('m/d/y', strtotime($reservations->updated_at))}}</td>
-                                        <td><a href="/admin/reservations/{{$reservation->id}}/edit"><i class="far fa-edit"></i></a></td>
+                                        <td>{{$reservation->time}}</td>
+                                        <td>{{date('m/d/y', strtotime($reservation->updated_at))}}</td>
+                                        {{-- <td><a href="/admin/reservations/{{$reservation->id}}/edit"><i class="far fa-edit"></i></a></td> --}}
                                         <td><a href="/admin/reservations/{{$reservation->id}}/delete" 
                                         onclick="if(! confirm('Are you sure you want to delete this reservation?')){return false}"><i class="far fa-trash-alt"></i></a></td>
                                     </tr>
                                     @endforeach
                                    </tbody>
                                </table>
+                               {{ $reservations->links() }}
                            </div>
                        </div>
                    </div>
