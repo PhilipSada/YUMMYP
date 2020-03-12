@@ -146,7 +146,7 @@ table {
 
 .welcome-jumbo {
   max-width: calc(100vw - 300px);
-  background: rgba(0, 0, 0, 0.836);
+  background: radial-gradient(#270303, black);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -207,6 +207,47 @@ table {
 
 @media (min-width: 768px) and (max-width: 991px) {
   #about-page {
+    padding: 20px;
+  }
+}
+
+#contact-page {
+  padding: 100px;
+}
+
+#contact-page h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: black;
+  margin-bottom: 2.5rem;
+}
+
+#contact-page h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: black;
+  margin-bottom: .5rem;
+}
+
+#contact-page p {
+  font-size: .9rem;
+  font-weight: 500;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
+
+#contact-page iframe {
+  width: 100%;
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+  #contact-page {
+    padding: 20px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  #contact-page {
     padding: 20px;
   }
 }

@@ -1,6 +1,6 @@
 <div class="side-menu">
 
-    <a href="/"class="logo"><img src="/images/logo.png"></a>
+    <a href="/"class="logo"><img src="{{$settings['general']->logo_image_url}}"></a>
     <div class="menu">
     <div class="menu-title">Menu</div>
     <ul class="links">
@@ -12,14 +12,14 @@
     </ul>
     </div>
     <div class="social-icons">
-    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+    <a href="{{$settings['social']->facebook_url}}" target="new"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+    <a href="{{$settings['social']->twitter_url}}" target="new"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+    <a href="{{$settings['social']->instagram_url}}" target="new"><i class="fa fa-instagram" aria-hidden="true"></i></a>
     </div>
     <div class="location">
-    <div class="address">234 links street<br>New York, New York 11747</div>
+    <div class="address">{{$settings['general']->address_1}}<br>{{$settings['general']->city}}, {{$settings['general']->state}} {{$settings['general']->zipcode}}</div>
     <div class="phone-number">
-    <a href="tel:7182198652">718-219-8652</a>
+    <a href="tel:7182198652">{{$settings['general']->phone_number}}</a>
     </div>
     </div>
 

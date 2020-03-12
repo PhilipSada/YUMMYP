@@ -5,11 +5,16 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Member;
 use App\Reservation;
+use App\GeneralSetting;
+use App\SeoSetting;
+use App\SocialAccountsSetting;
 
 
 class StaticPagesController extends Controller
 {
     public function home(){
+       
+
         return view('home');
     }
     public function reservations(){
@@ -75,8 +80,10 @@ class StaticPagesController extends Controller
     public function menu(){
         return view('menu/index');
     }
-    public function singleMenu(){
-        return view('menu/single-menu');
+    public function singleMenu($slug){
+        return view('menu/single-menu', [
+            'foodItem'=>ucfirst($slug)
+        ]);
     }
    
     

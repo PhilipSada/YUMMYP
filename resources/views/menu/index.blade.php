@@ -1,6 +1,8 @@
 @extends('layouts.app')
 
-@section('title', 'Page Title')
+@section('title')
+Food Preview - {{$settings['general']->site_title}}
+@endsection
 
 
 @section('content')
