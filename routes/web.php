@@ -32,6 +32,7 @@ Route::get('/testing', 'StaticPagesController@testing');
 
 //admin Dashboard
 Route::get('/admin','admin\AdminController@dashboard');
+Route::get('/admin/estimated-revenue-daily','admin\AdminController@dailyRevenueLast30');
 //admin registration
 Route::get('/admin/register', 'admin\AdminController@register');
 //admin login
