@@ -24,11 +24,14 @@ Route::get('/reservations','StaticPagesController@reservations');
 Route::post('/reservations','StaticPagesController@saveReservations');
 Route::get('/reservations/reservation-confirmed','StaticPagesController@reservationConfirmation');
 Route::get('/contact', 'StaticPagesController@contact');
+Route::post('/contact', 'StaticPagesController@sendMail');
 Route::get('/offers', 'StaticPagesController@offers');
 Route::post('/offers', 'StaticPagesController@registerMember');
 Route::get('/offers/thank-you', 'StaticPagesController@offersThanks');
 Route::get('/about', 'StaticPagesController@about');
 Route::get('/testing', 'StaticPagesController@testing');
+Route::get('/contact-mail', 'ContactPageController@viewMail');
+Route::get('/enquiry-received', 'StaticPagesController@mailReceived');
 
 //admin Dashboard
 Route::get('/admin','admin\AdminController@dashboard');
@@ -90,7 +93,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 
 View::composer(['home','pages/about', 'pages/contact', 'pages/offers', 'pages/thanks', 
-'pages/reservation-confirmation','pages/reservations', 'menu/index', 'menu/single-menu'], function ($view) {
+'pages/reservation-confirmation','pages/reservations', 'menu/all-categories', 'menu/single-menu', 'mail/mail-confirmation'], function ($view) {
     $generalSettings = GeneralSetting::find(1);
     $socialAccountSettings = SocialAccountsSetting::find(1);
     $seoSettings = SeoSetting::find(1);

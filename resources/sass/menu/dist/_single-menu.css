@@ -1,0 +1,99 @@
+#single-menu-page {
+  padding: 100px;
+}
+
+#single-menu-page .menu-nutrition {
+  padding-top: 4rem;
+}
+
+#single-menu-page .menu-table {
+  width: 100%;
+}
+
+#single-menu-page th {
+  padding-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+#single-menu-page td {
+  font-size: 0.9rem;
+  padding-bottom: 0.5rem;
+}
+
+#single-menu-page .td-medium {
+  width: 20%;
+}
+
+#single-menu-page .td-large {
+  width: 60%;
+}
+
+#single-menu-page .allergens h4 {
+  font-size: 0.9rem;
+  padding-bottom: 0.75rem;
+}
+
+#single-menu-page .single-menu-grid {
+  display: flex;
+  width: 100%;
+  margin: 0 1rem;
+}
+
+#single-menu-page .single-menu-image-container {
+  height: 64vh;
+  width: 60%;
+}
+
+#single-menu-page .single-menu-image-container .single-menu-image {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+#single-menu-page .single-menu-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #eeeeee;
+  width: 40%;
+  padding: 2rem;
+}
+
+#single-menu-page .single-menu-text h4 {
+  font-size: 2rem;
+  font-weight: 700;
+  padding-bottom: 1rem;
+}
+
+#single-menu-page .single-menu-text p {
+  line-height: 1.5rem;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+
+#single-menu-page .single-menu-text .single-menu-contact {
+  text-decoration: none;
+  color: white;
+  padding: 0.5rem 4rem;
+  background-color: rgba(0, 0, 0, 0.712);
+  border: 1px solid transparent;
+  transition: all .8s ease;
+}
+
+#single-menu-page .single-menu-text .single-menu-contact:hover {
+  background-color: rgba(0, 0, 0, 0.774);
+  border: 2px solid transparent;
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+  #single-menu-page {
+    padding: 20px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  #single-menu-page {
+    padding: 20px;
+  }
+}

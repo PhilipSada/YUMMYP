@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.landing-page')
 
 @section('title')
 Contact - {{$settings['general']->site_title}}
@@ -9,31 +9,116 @@ Philly Burgers have been around for every long time. Having high quality burgers
 @endsection  --}}
 
 @section('content')
-
-    
-  <div id="contact-page">
-      <div class="content-box">
-          <div class="row">
-              <div class="col-md-6">
-                <h1>Contact Us</h1>
-                <h3>Address</h3>
-                <p>{{$settings['general']->address_1}}<br>{{$settings['general']->city}}, 
-                    {{$settings['general']->state}} {{$settings['general']->zipcode}}
-                </p>
-                <h3>Phone Number</h3>
-                <p><a href="tel:7182198652">{{$settings['general']->phone_number}}</a></p>
-             </div>
-             <div class="col-md-6">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3591.8139851157985!2d-80.21037628502555!3d25.809710183614996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b14a3c28de63%3A0x870df91c65bc6732!2s730%20NW%2036th%20St%2C%20Miami%2C%20FL%2033127%2C%20USA!5e0!3m2!1sen!2sde!4v1584006153707!5m2!1sen!2sde"
-                 width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-             </div>
+<main data-barba="container" data-barba-namespace="contact">
+<div id="contact-page">
+  <div class="pt-4 ml-5 contact-container">
+    <div class="row">
+        <div class="col-md-6">
+        <h1 class="contact-title">Get in touch</h1>
+        <p class="contact-text">If you have any enquiry please fill in the contact form or call us on the phone number given below
+         </p>
+            <div class="contact-info">
+               
+                <p class="contact-tel"><i class="fa fa-phone pr-2"></i>718-219-8652</p>
+                <p><i class="fa fa-map-marker pr-2"></i>730 NW 36th, Miami FL 33127</p>
+                <p><i class="fa fa-clock-o pr-2"></i>Monday-Friday:9am-5pm, Saturday:10am-5pm</p>
+            </div>
         </div>
-      </div>
+        <div class="col-md-6 pr-5">
+            <div class="card">
+                <h5 class="card-header enquiry-header">Send an Enquiry</h5>
+                <div class="card-body">
+                <form method="POST" action="/contact" enctype="multipart/form-data">
+                    @csrf
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="inputFirstName">First Name</label>
+                                <input id="inputFirstName" type="text" class="form-control form-control-md @error('firstname') is-invalid @enderror" name="firstname" value="{{ old('firstname') }}" 
+                                required autocomplete="name" placeholder="John" autofocus >
     
-  </div>
-       
+                                        @error('firstname')
+                                            <span class="invalid-feedback" role="alert">
+                                                <strong>{{ $message }}</strong>
+                                            </span>
+                                        @enderror
+                            </div> 
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="inputLastName">Last Name</label>
+                                <input id="inputLastName" type="text" class="form-control form-control-md @error('lastname') is-invalid @enderror" name="lastname" value="{{ old('lastname') }}" 
+                                required autocomplete="name" placeholder="Doe" autofocus >
     
-       
+                                        @error('lastname')
+                                            <span class="invalid-feedback" role="alert">
+                                                <strong>{{ $message }}</strong>
+                                            </span>
+                                        @enderror
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="inputEmail">Email</label>
+                                <input id="inputEmail" type="email" class="form-control form-control-md @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" 
+                                required autocomplete="name" placeholder="johndoe@gmail.com" autofocus >
+    
+                                        @error('email')
+                                            <span class="invalid-feedback" role="alert">
+                                                <strong>{{ $message }}</strong>
+                                            </span>
+                                        @enderror
+                            </div> 
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="inputPhoneNumber">Phone Number</label>
+                                <input id="inputPhoneNumber" type="tel" class="form-control form-control-md @error('phonenumber') is-invalid @enderror" name="phonenumber" value="{{ old('phonenumber') }}" 
+                                required autocomplete="name" placeholder="+2345757575757" autofocus >
+    
+                                        @error('phonenumber')
+                                            <span class="invalid-feedback" role="alert">
+                                                <strong>{{ $message }}</strong>
+                                            </span>
+                                        @enderror
+                            </div>
+                        </div>
+                    </div>
+                         
+                    <div class="form-group">
+                        <label for="inputMessage">Please leave us a message </label>
+                        <textarea name="message" row="20" cols="50" class="form-control"></textarea>
+                        @error('message')
+                        <span class="invalid-feedback" role="alert">
+                            <strong>{{ $message }}</strong>
+                        </span>
+                       @enderror
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-sm-6 pb-2 pb-sm-4 pb-lg-0 pr-0">
+                            
+                        </div>
+                        <div class="col-sm-6 pl-0">
+                            <p class="text-right">
+                                <button type="submit" class="contact-submit">ENQUIRE NOW</button> 
+                            </p>
+                        </div>
+                    </div>
+                </form>
+                </div>
+            </div>
+        </div>
+    
+    
+
+    </div>
+</div>
+</div>     
+    
+</main>     
    
 
 @endsection

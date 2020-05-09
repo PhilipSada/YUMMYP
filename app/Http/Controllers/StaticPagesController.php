@@ -3,19 +3,25 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\Contact;
 use App\Member;
 use App\Reservation;
 use App\GeneralSetting;
 use App\SeoSetting;
 use App\SocialAccountsSetting;
+use App\FoodCategory;
+use App\FoodItem;
 
 
 class StaticPagesController extends Controller
 {
     public function home(){
-       
-
-        return view('home');
+        $foodItems = FoodItem::inRandomOrder()->limit(6)->get();
+        
+        return view('home', [
+            'foodItems'=>$foodItems
+        ]);
     }
     public function reservations(){
         return view('pages/reservations');
@@ -52,6 +58,43 @@ class StaticPagesController extends Controller
     public function contact(){
         return view('pages/contact');
     }
+    public function viewMail(){
+        return view('mail/contact-mail');
+    }
+    public function sendMail(Request $request){
+
+        request()->validate([
+            'firstname' => ['required', 'string', 'max:255'],
+            'lastname' => ['required', 'string', 'max:255'],
+            'email' => ['required', 'string', 'email', 'max:255'],
+            'phonenumber'=>['required'],
+            'message'=>['required']
+            
+        ]);
+
+        $content = [
+            'firstname'=>$request->firstname,
+            'lastname'=>$request->lastname,
+            'email'=>$request->email,
+            'phonenumber'=>$request->phonenumber,
+            'message'=>$request->message,
+        ];
+
+        $recipients =[
+            'sadaphillip@gmail.com',
+            'sada_phillip@yahoo.com'
+
+        ];
+     
+        Mail::to($recipients)->send(new Contact($content));
+
+        $request->session()->put('enquiry', 'enquiry-sent');
+
+        return redirect('/enquiry-received');
+    }
+    public function mailReceived(){
+        return view('mail/mail-confirmation');
+    }
     public function offers(){
         return view('pages/offers');
     }
@@ -78,11 +121,26 @@ class StaticPagesController extends Controller
         return view('pages/thanks');
     }
     public function menu(){
-        return view('menu/index');
+        $beefItems = FoodItem::where('category_id', 1)->get();
+        $chickenItems = FoodItem::where('category_id', 1)->get();
+        $kingSnackItems = FoodItem::where('category_id', 1)->get();
+        
+        return view('menu/all-categories', [
+            'beefItems'=>  $beefItems,
+            'chickenItems'=>$chickenItems,
+            'kingSnackItems'=>$kingSnackItems
+        ]);
     }
     public function singleMenu($slug){
+       
+        $foodItem = FoodItem::where('title', $slug)->first();
+       
+        // $foodItems = FoodItem::where('category_id', $foodCategory->id)->get();
         return view('menu/single-menu', [
-            'foodItem'=>ucfirst($slug)
+            //ucfirst is to capitalize the first letter
+            // 'foodItem'=>ucfirst($slug),
+            'foodItem'=>$foodItem
+           
         ]);
     }
    

@@ -1,28 +1,108 @@
 #single-menu-page{
     padding:100px;
 
-    h1{
-        font-size:2rem;
-        font-weight:700;
-        color:black;
-        margin-bottom:2rem;
+    .menu-nutrition{
+        padding-top:4rem;
     }
-    .item{
-        margin-bottom:2rem;
-    }
-
-    .title{
-        display:flex;
+    .menu-table{
         width:100%;
-        justify-content:space-between;
-        margin-bottom:.5rem;
-        h4, .price{
-            font-size:1.4rem;
-            color:black;
-            font-weight:900;
-
+    }
+    th{
+        padding-bottom:0.5rem;
+        font-size:0.9rem;
+    }
+    td{
+        font-size:0.9rem;
+        padding-bottom:0.5rem;
+    }
+    .td-medium{
+        width:20%;
+    }
+    .td-large{
+        width:60%;
+    }
+    // .menu-height{
+    //     height:30px;
+    // }
+    .allergens{
+        h4{
+            font-size:0.9rem;
+            padding-bottom:0.75rem;
         }
     }
+    .single-menu-grid{
+        display:flex;
+        width:100%;
+        margin:0 1rem;
+    }
+    
+    .single-menu-image-container{
+        height:64vh;
+        width:60%;
+    
+        .single-menu-image{
+            object-fit:cover;
+            height:100%;
+            width:100%;
+        }
+    }
+    .single-menu-text{
+        display:flex;
+        justify-content: center;
+        align-items:center;
+        flex-direction: column;
+        background-color:rgb(238, 238, 238);
+        width:40%;
+        padding:2rem;
+        h4{
+            font-size:2rem;
+            font-weight:700;
+            padding-bottom:1rem;
+        }
+        p{
+            line-height: 1.5rem;
+            align-items: center;
+            padding-bottom:1rem;
+        }
+    
+        .single-menu-contact{
+           text-decoration: none;
+           color:white;
+           padding:0.5rem 4rem;
+           background-color:rgba(0, 0, 0, 0.712);
+           border:1px solid transparent;
+           transition:all .8s ease;
+           &:hover{
+            background-color:rgba(0, 0, 0, 0.774);
+            border:2px solid transparent;
+           }
+    
+          
+        }
+    }
+
+    // h1{
+    //     font-size:2rem;
+    //     font-weight:700;
+    //     color:black;
+    //     margin-bottom:2rem;
+    // }
+    // .item{
+    //     margin-bottom:2rem;
+    // }
+
+    // .title{
+    //     display:flex;
+    //     width:100%;
+    //     justify-content:space-between;
+    //     margin-bottom:.5rem;
+    //     h4, .price{
+    //         font-size:1.4rem;
+    //         color:black;
+    //         font-weight:900;
+
+    //     }
+    // }
    
  }
  @media (min-width: 0px) and (max-width: 767px) {

@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.landing-page')
 
 @section('title')
 Offers - {{$settings['general']->site_title}}
@@ -7,7 +7,7 @@ Offers - {{$settings['general']->site_title}}
 
 @section('content')
 
-    
+<main data-barba="container" data-barba-namespace="offers">
   <div id="offers-page">
       <div class="content-box">
           <div class="row">
@@ -93,7 +93,7 @@ Offers - {{$settings['general']->site_title}}
   </div>
        
     
-       
+</main>     
    
 
 @endsection

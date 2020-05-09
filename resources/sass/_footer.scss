@@ -1,0 +1,149 @@
+footer{
+    // margin-bottom:0rem;
+    height:3vh;
+    border-top:1px solid rgba(0, 0, 0, 0.281);
+   
+    p{
+        font-size:0.8rem;
+        cursor:pointer;
+    }
+}
+.footer{
+   
+    // background-color:rgba(211, 211, 211, 0.219);
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    padding-top:2rem;
+    padding-bottom:1rem;
+}
+.first-footer{
+    p{
+        font-size:1rem;
+    }
+    
+}
+.footer-heading{
+    font-weight:bold;
+}
+.second-footer{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.social-icon-footer{
+    font-size:15px;
+    padding-left:0.5rem;
+    color:black;
+}
+
+@media (min-width:0px) and (max-width:370px){
+    .footer{
+        padding-top:1rem;
+        padding-bottom:1.5rem;
+    }
+    .first-footer{
+        p{
+            font-size:0.8rem;
+        }
+        
+    }
+    .social-icon-footer{
+        font-size:10px;
+       
+    }
+}
+@media (min-width: 371px) and (max-width: 500px) {
+    .faq-title{
+        font-size:1rem;
+    }
+    .faq-body{
+        h4{
+            font-size:1rem;
+            font-weight:700;
+        }
+        p{
+            font-size:0.8rem;
+        }
+    }
+  
+}
+@media (min-width: 501px) and (max-width: 540px) {
+    .faq-title{
+        font-size:1rem;
+    }
+    .faq-body{
+        h4{
+            font-size:1rem;
+            font-weight:700;
+        }
+        p{
+            font-size:0.8rem;
+        }
+    }
+  
+}
+@media (min-width: 541px) and (max-width: 767px) {
+    .faq-title{
+        font-size:1rem;
+    }
+    .faq-body{
+        h4{
+            font-size:1rem;
+            font-weight:700;
+        }
+        p{
+            font-size:0.8rem;
+        }
+    }
+  
+}
+  
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 900px) {
+    .faq-title{
+        font-size:1rem;
+    }
+    .faq-body{
+        h4{
+            font-size:1rem;
+            font-weight:700;
+        }
+        p{
+            font-size:0.8rem;
+        }
+    }
+}
+@media (min-width: 901px) and (max-width: 991px) {
+    .faq-title{
+        font-size:1rem;
+    }
+    .faq-body{
+        h4{
+            font-size:1rem;
+            font-weight:700;
+        }
+        p{
+            font-size:0.8rem;
+        }
+    }
+}
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1099px) {
+  
+}
+@media (min-width: 1100px) and (max-width: 1119px) {
+   
+}
+@media (min-width: 1120px) and (max-width: 1199px) {
+   
+}
+  
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) and (max-width: 1399px) {
+  
+ }
+@media (min-width: 1400px) and (max-width: 1500px) {
+  
+}

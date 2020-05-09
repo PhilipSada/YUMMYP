@@ -1,0 +1,148 @@
+.hero {
+  width: 100vw;
+  position: relative;
+  height: 100vh;
+}
+
+.hero .split {
+  position: absolute;
+  height: 100vh;
+}
+
+.hero .left-split {
+  width: 40%;
+  left: 0;
+  background-color: rgba(211, 211, 211, 0.082);
+}
+
+.hero .right-split {
+  width: 60%;
+  right: 0;
+}
+
+.hero .right-split-image-container {
+  width: 90%;
+  height: 100vh;
+}
+
+.hero .right-split-image-container .right-split-image {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.hero .right-split-image-container-2 {
+  width: 70%;
+  height: 100vh;
+  background-color: orangered;
+}
+
+.hero .right-split-side-bar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 10%;
+  height: 100vh;
+  background-color: white;
+}
+
+.hero .hero-text {
+  position: absolute;
+  top: 30%;
+  left: 20%;
+}
+
+.hero .hero-text .intro {
+  color: black;
+  font-weight: 300;
+  font-size: 3rem;
+  padding-bottom: 0.5rem;
+}
+
+.hero .hero-text .hero-title {
+  color: rgba(0, 0, 128, 0.829);
+  font-size: 3rem;
+  font-weight: 500;
+  padding-bottom: 1rem;
+  letter-spacing: 1px;
+}
+
+.hero .hero-text .details {
+  padding-bottom: 4rem;
+  color: grey;
+  letter-spacing: 0.5px;
+}
+
+.hero .booking {
+  text-decoration: none;
+  color: white;
+  border: 1px solid orangered;
+  padding: 1rem 3rem;
+  background-color: orangered;
+}
+
+.hero .social-icons {
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
+}
+
+.hero .social-icons .fa-instagram, .hero .social-icons .fa-twitter, .hero .social-icons .fa-facebook {
+  font-size: 25px;
+  color: black;
+}
+
+.home-food-menu {
+  background-color: rgba(211, 211, 211, 0.082);
+  height: 100vh;
+  margin-bottom: 10rem;
+}
+
+.home-food-menu h4 {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  padding-top: 4rem;
+}
+
+.home-food-menu .more-food-menu-container {
+  margin: 4rem 0rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-food-menu .more-food-menu-link {
+  text-decoration: none;
+  border: 1px solid transparent;
+  background-color: orangered;
+  color: white;
+  transition: all 1s ease;
+  padding: 1rem 2rem;
+}
+
+.home-food-menu .more-food-menu-link:hover {
+  border: 2px solid transparent;
+}
+
+.home-food-menu .menu-card-container {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+  margin-left: 12rem;
+  margin-right: 10rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.home-food-menu .menu-card {
+  width: 20rem;
+  height: 18rem;
+  box-shadow: 0px 4px 8px 0px grey;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.home-food-menu .menu-card:hover {
+  box-shadow: 0px 16px 32px 0px grey;
+}

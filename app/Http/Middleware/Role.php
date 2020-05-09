@@ -26,6 +26,7 @@ class Role
                 return redirect('/admin');
             }
         }
+        //to check if the user is not logged in
         if(!Auth::check()){
             return redirect('/login');
         }

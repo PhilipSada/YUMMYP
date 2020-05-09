@@ -4,16 +4,19 @@
         @include('includes.metatags')
           
     </head>
-    <body>
-        <section id="app-layout">
+    <body data-barba="wrapper">
+        <nav>
             @include('includes.menu-bar')
-            <div class="welcome-jumbo">
-              <div class="status">NEW</div>
-              <h1>Philly Burger</h1>
-             <img src="https://www.stickpng.com/assets/images/580b57fcd9996e24bc43c1a9.png" class="burger-fries"> 
-            </div>
-          </section>
+        </nav>
+        <div class="loading-bg"></div>
           @yield('content')
-        
+          <footer>
+            @include('includes.footer')
+          </footer>
+
+          <script src="https://unpkg.com/@barba/core"></script>
+          <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js'></script>
+          <script src="/js/app.js"></script>
     </body>
+   
 </html>

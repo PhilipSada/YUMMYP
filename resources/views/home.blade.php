@@ -1,155 +1,48 @@
 @extends('layouts.landing-page')
 
-@section('title')
-{{$settings['general']->site_title}} America's #1 Burgers
-@endsection
-
+@section('title', 'Yummy P')
+<main data-barba="container" data-barba-namespace="home">
 @section('content')
-<section id="information">
-    <div class="restaurant-image">
-      <img src="<?= asset('/images/restaurant.png') ?>">
-    </div>
-    <div class="info">
-     <h2>We started from the bottom in 1987</h2>
-     <div class="paragraphs">
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate quibusdam laboriosam, 
-           consectetur amet cupiditate ipsam, voluptatum libero consequatur sed hic deserunt provident 
-           quis impedit temporibus inventore non fugit nobis rem?
-           Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate quibusdam laboriosam, 
-           consectetur amet cupiditate ipsam, voluptatum libero consequatur sed hic deserunt provident 
-         </p>
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate quibusdam laboriosam, 
-           consectetur amet cupiditate ipsam, voluptatum libero consequatur sed hic deserunt provident 
-           quis impedit temporibus inventore non fugit nobis rem?
-           Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate quibusdam laboriosam, 
-           consectetur amet cupiditate ipsam, voluptatum libero consequatur sed hic deserunt provident 
-         </p>
-     </div>
-     <a href="" class="about-link"><span>Learn more about our restaurants</span>
-       <div class="circle-right"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
-     </a>
-    </div>
-   
-  </section>
-  <section id="food-preview">
-    <h2>We have everything you need for your taste buds</h2>
-    <div class="button-rounded">View Our Menu</div>
-    <div class="container">
-           <div class="left-btn"><i class="fa fa-chevron-left" aria-hidden="true"></i></div>
-           <div class="right-btn"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
-       <div class="food-slider">
-         <div class="sliding-system">
-           <div class="slide">
-             <div class="background"></div>
-             <div class="content">
-                 <div class="food-title">
-                   Starters
-                 </div>
-                 <p class="food-description">
-                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                 Ratione debitis pariatur atque eveniet sapiente amet vel nemo illum eligendi dolore?
-                 </p>
-                 <div class="food-image">
-                   <img src="<?= asset('/images/chips.png') ?>">
-                 </div>
-             </div>  
+  <div class="hero">
+      <div class="split left-split">
+          <div class="hero-text">
+              <h1 class="intro">Discover your taste</h1>
+              <h1 class="hero-title">Eat Delicious Burgers</h1>
+              <p class="details">We are glad to introduce more burgers to our menu as<br> we noticed some of our customers needed new<br> burgers
+                in the menu and at yummy p, we love <br>to satisfy every customer</p>
+              <a href="/reservations" class="booking">Book a table</a>
           </div>
-          <div class="slide">
-             <div class="background"></div>
-             <div class="content">
-                 <div class="food-title">
-                   Burgers
-                 </div>
-                 <p class="food-description">
-                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                 Ratione debitis pariatur atque eveniet sapiente amet vel nemo illum eligendi dolore?
-                 </p>
-                 <div class="food-image">
-                   <img src="<?= asset('/images/burger.png') ?>">
-                 </div>
-             </div>  
+          <div class="social-icons">
+              <div class="pt-2"><i class="fa fa-instagram"></i></div>
+              <div class="pt-2"><i class="fa fa-twitter"></i></div>
+              <div class="pt-2"><i class="fa fa-facebook"></i></div>
           </div>
-          <div class="slide">
-             <div class="background"></div>
-             <div class="content">
-                 <div class="food-title">
-                   Entrees
-                 </div>
-                 <p class="food-description">
-                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                 Ratione debitis pariatur atque eveniet sapiente amet vel nemo illum eligendi dolore?
-                 Ratione debitis pariatur atque eveniet sapiente amet vel nemo 
-                 </p>
-                 <div class="food-image">
-                   <img src="<?= asset('/images/steak.png') ?>">
-                 </div>
-             </div>  
+      </div>
+      <div class="split right-split">
+          <div class="right-split-image-container">
+              <img src="/images/burgercover.png" class="right-split-image">
           </div>
-          <div class="slide">
-             <div class="background"></div>
-             <div class="content">
-                 <div class="food-title">
-                   Sides
-                 </div>
-                 <p class="food-description">
-                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                 Ratione debitis pariatur atque eveniet sapiente amet vel nemo illum eligendi dolore?
-                 Ratione 
-                 </p>
-                 <div class="food-image">
-                   <img src="<?= asset('/images/salad.png') ?>">
-                 </div>
-             </div>  
-          </div>
-          <div class="slide">
-             <div class="background"></div>
-             <div class="content">
-                 <div class="food-title">
-                   Desserts
-                 </div>
-                 <p class="food-description">
-                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                 Ratione debitis pariatur atque eveniet sapiente amet vel nemo illum eligendi dolore?
-                 </p>
-                 <div class="food-image">
-                   <img src="<?= asset('/images/pancakes.png') ?>">
-                 </div>
-             </div>  
-          </div>
-          <div class="slide">
-             <div class="background"></div>
-             <div class="content">
-                 <div class="food-title">
-                   Drinks
-                 </div>
-                 <p class="food-description">
-                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                 Ratione debitis pariatur atque eveniet sapiente amet vel nemo illum eligendi dolore?
-                 </p>
-                 <div class="food-image">
-                   <img src="<?= asset('/images/juice.png') ?>">
-                 </div>
-             </div>  
-          </div>
-          <div class="slide">
-             <div class="background"></div>
-             <div class="content">
-                 <div class="food-title">
-                   Beer
-                 </div>
-                 <p class="food-description">
-                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                
-                 </p>
-                 <div class="food-image">
-                   <img src="<?= asset('/images/cola.png') ?>">
-                 </div>
-             </div>  
-          </div>
-         </div>
-
-     </div>
-    </div>
-   
-  </section>
+          {{--  <div class="right-split-image-container-2"></div>  --}}
+          <div class="right-split-side-bar"></div>
+      </div>
+    
+      
+  </div>
+   <div class="home-food-menu">
+     <h4>Our Menu</h4>
+      <div class="menu-card-container">
+        @foreach($foodItems as $foodItem)
+            <div>
+              <div class="card menu-card">
+                <a href="/menu/{{$foodItem->title}}"><img class="card-img-top" src="{{$foodItem->image_url}}" alt="Card image cap"></a>
+                <div class="card-body">
+                 <p class="card-text">{{$foodItem->title}}</p>
+               </div>
+             </div>
+            </div>
+        @endforeach  
+       </div>
+         <div class="more-food-menu-container"><a href="/menu" class="more-food-menu-link">See more</a></div>
+   </div>
+  </main>
 @endsection

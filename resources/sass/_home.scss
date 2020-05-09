@@ -1,55 +1,145 @@
 
-.welcome-jumbo{
-    max-width:calc(100vw - 300px);
-    background:radial-gradient(#270303, black);
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    flex-direction:column;
-    padding:100px;
-    transform:translate3d(300px, 0, 0);
-    // overflow: hidden;
+.hero{
+    width:100vw;
+    position:relative;
+    height:100vh;
+      
+    .split{
+        position: absolute;
+        height:100vh;
 
-    .burger-fries{
-       height:300px;
-       width:100%;
-       max-width:700px;
-       // animation:moveUpandDown 1s linear infinite;
-       // position:relative;
     }
-    h1{
-       font-size:4rem;
-       font-weight:900;
-       align-self:flex-start;
-       color:white;
-       margin-bottom:100px;
+    .left-split{
+        width:40%;
+        left:0;
+        background-color:rgba(211, 211, 211, 0.082);
+         
     }
-    .status{
-        display:inline-block;
-        padding:10px 15px;
-        font-size:.8rem;
-        font-weight:700;
+    .right-split{
+        width:60%;
+        right:0;
+
+    }
+    .right-split-image-container{
+        width:90%;
+        height:100vh;
+
+        .right-split-image{
+            object-fit: cover;
+            height:100%;
+            width:100%;
+        }
+    }
+    .right-split-image-container-2{
+        width:70%;
+        height:100vh;
+        background-color: orangered;
+    }
+    .right-split-side-bar{
+        position: absolute;
+        top:0;
+        right:0;
+        width:10%;
+        height:100vh;
+        background-color:white;
+    }
+    
+    .hero-text{
+        position: absolute;
+        top:30%;
+        left:20%;
+        .intro{
+            color:black;
+            font-weight:300;
+            font-size:3rem;
+            padding-bottom:0.5rem;
+        }
+        .hero-title{
+            color:	rgba(0, 0, 128, 0.829);
+            font-size:3rem;
+            font-weight:500;
+            padding-bottom:1rem;
+            letter-spacing: 1px;
+        }
+    
+        .details{
+            padding-bottom:4rem;
+            color:grey;
+            letter-spacing:0.5px;
+        }
+    }
+  
+    .booking{
+        text-decoration:none;
         color:white;
-        background:black;
-        border-radius:5px;
-        align-self:flex-start;
-        margin-bottom:20px;
-
+        border:1px solid orangered;
+        padding:1rem 3rem;
+        background-color: orangered;
+     
+    
     }
-   //  @keyframes moveUpandDown{
-   //      0%, 100%{
-   //          bottom:0;
-   //      }
-   //      50%{
-   //          bottom:100px;
-   //      }
-   //  }
+    
 
-
-
-
+    .social-icons{
+        position: absolute;
+        bottom:10%;
+        left:5%;
+        .fa-instagram, .fa-twitter, .fa-facebook{
+            font-size:25px;
+            color:black;
+        }
+    }
 
        
+}
+.home-food-menu{
+    background-color:rgba(211, 211, 211, 0.082);
+    height:100vh;
+    margin-bottom:10rem;
+    h4{
+        font-size:2rem;
+        font-weight:700;
+        text-align: center;
+        padding-top:4rem;
+    }
+    .more-food-menu-container{
+        margin:4rem 0rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .more-food-menu-link{
+        text-decoration: none;
+        border:1px solid transparent;
+        background-color: orangered;
+        color:white;
+        transition:all 1s ease;
+        padding:1rem 2rem;
+        &:hover{
+            border:2px solid transparent;
+        }
+    }
+
+    .menu-card-container{
+        display:grid;
+        grid-gap:1rem;
+        grid-template-columns:repeat(auto-fill, minmax(310px,1fr));
+        margin-left:12rem;
+        margin-right:10rem;
+        margin-top:2rem;
+        margin-bottom:2rem;
+    }
+    .menu-card{
+        width:20rem;
+        height:18rem;
+        box-shadow:0px 4px 8px 0px grey;
+        transition: all 0.5s ease-in-out;
+        cursor: pointer;
+        
+        &:hover{
+            box-shadow: 0px 16px 32px 0px grey;
+        }
+    }
 }
 @media (min-width: 576px) { }
 

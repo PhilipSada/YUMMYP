@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.landing-page')
 
 @section('title')
 About - {{$settings['general']->site_title}}
@@ -10,7 +10,7 @@ Philly Burgers have been around for every long time. Having high quality burgers
 
 @section('content')
 
-    
+<main data-barba="container" data-barba-namespace="about">
   <div id="about-page">
       <div class="content-box">
           <div class="row">
@@ -28,14 +28,14 @@ Philly Burgers have been around for every long time. Having high quality burgers
                 </p>
              </div>
              <div class="col-md-6">
-                 <img src="<?= asset('images/about.png') ?>" class="img-fluid">
+                 <img src="<?= asset('images/food3.png') ?>" class="img-fluid">
              </div>
         </div>
       </div>
     
   </div>
        
-    
+</main>
        
    
 

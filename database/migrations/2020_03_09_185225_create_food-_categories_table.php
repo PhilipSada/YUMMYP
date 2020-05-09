@@ -16,8 +16,6 @@ class CreateFoodCategoriesTable extends Migration
         Schema::create('food_categories', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('title');
-            $table->text('image_url');
-            $table->text('description');
             $table->timestamps();
         });
     }

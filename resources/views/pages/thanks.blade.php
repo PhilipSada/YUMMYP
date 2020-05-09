@@ -1,19 +1,17 @@
-@extends('layouts.app')
+@extends('layouts.landing-page')
 
-@section('title')
-Thank You - {{$settings['general']->site_title}}
-@endsection
-
+@section('title', 'Thank You')
 
 @section('content')
 
-    
+<main data-barba="container" data-barba-namespace="thank-you">
   <div id="offers-page">
       <div class="content-box">
-          <div class="row">
-              <div class="col-md-8 offset-md-2 thank-you">
-                <h1>Thank you for signing up</h1>
+          <div class="text-center">
+              <div class="thank-you">
+                <h2>Thank you for signing up</h2>
                 <p>You will be notified when we have any special offer. This would be sent to your email</p>
+                <div class="back-to-home"><a href="/">Back to home</a></div>
           </div>
              
         </div>
@@ -21,7 +19,7 @@ Thank You - {{$settings['general']->site_title}}
     
   </div>
        
-    
+</main> 
        
    
 
