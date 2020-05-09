@@ -12,7 +12,7 @@ Offers - {{$settings['general']->site_title}}
       <div class="content-box">
           <div class="row">
               <div class="col-md-8 offset-md-2">
-                <h1>Get Offers</h1>
+                <h1>Get Our Latest Offers</h1>
                 <form method="POST" action="/offers">
                     @csrf
                     <div class="row">
@@ -70,7 +70,7 @@ Offers - {{$settings['general']->site_title}}
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-group">
-                               <p>In signing up, I acknowledge i am at least 18 years old and want to receive email offers from Phill's Burgers
+                               <p>In signing up, I acknowledge i am at least 18 years old and want to receive email offers from Yummy P
                                    I select to join dine rewards, agree to the terms and conditions of the program
                                </p>
                             </div>

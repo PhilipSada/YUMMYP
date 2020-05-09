@@ -5,7 +5,7 @@ const initialPageAnimation = ()=>{
         ".hero-text",
         {
           x: 0,
-          y: 100,
+          y: 200,
           opacity: 0,
         },
         {

@@ -7,9 +7,9 @@
 <main data-barba="container" data-barba-namespace="reservation">    
   <div id="reservations-page">
       <div class="content-box">
-          <div class="row">
+          <div class="row d-flex justify-content-center">
               <div class="col-md-8">
-                <h1>Reservation</h1>
+                <h1>Reserve a table </h1>
                 <form method="POST" action="/reservations">
                   @csrf
                   <div class="row">
@@ -56,9 +56,9 @@
                     <div class="col-md-6">
                       <div class="form-group">
                         <label for="inputphone">Phone Number</label>
-                        <input id="inputphone" type="tel" class="form-control form-control-lg @error('phone_number') is-invalid @enderror" name="phone_number" value="{{ old('phone_number') }}" required autocomplete="phone_number" placeholder="+497878787845">
+                        <input id="inputphone" type="tel" class="form-control form-control-lg @error('phonenumber') is-invalid @enderror" name="phonenumber" value="{{ old('phonenumber') }}" required autocomplete="phonenumber" placeholder="+497878787845">
   
-                        @error('phone_number')
+                        @error('phonenumber')
                             <span class="invalid-feedback" role="alert">
                                 <strong>{{ $message }}</strong>
                             </span>
@@ -70,14 +70,14 @@
                     <div class="col-md-6">
                       <div class="form-group">
                         <label for="guestinput">How many guests?</label>
-                        <select class="form-control form-control-lg @error('guests_total') is-invalid @enderror" id="guestinput" name="guests_total">
+                        <select class="form-control form-control-lg @error('gueststotal') is-invalid @enderror" id="guestinput" name="gueststotal">
                           <option>1</option>
                           <option>2</option>
                           <option>3</option>
                           <option>4</option>
                           <option>5</option>
                         </select>
-                        @error('guests_total')
+                        @error('gueststotal')
                         <span class="invalid-feedback" role="alert">
                             <strong>{{ $message }}</strong>
                         </span>
@@ -107,9 +107,9 @@
                     </div>
                   </form>
              </div>
-             <div class="col-md-4">
+             {{-- <div class="col-md-4">
                  <p> Do you want us to reserve a table for you? If yes, please fill the reservation form </p>
-             </div>
+             </div> --}}
              
         </div>
       </div>

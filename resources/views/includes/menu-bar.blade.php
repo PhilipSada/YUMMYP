@@ -1,6 +1,6 @@
 <div class="navigation">
     <div class="nav-logo">
-        <a href="/"><h4>YummyP.</h4></a>
+        <a href="/">Yummy <span>P.</span></a>
     </div>
     <div class="hamburger">
         <div class="line"></div>

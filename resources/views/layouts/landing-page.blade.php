@@ -9,7 +9,11 @@
             @include('includes.menu-bar')
         </nav>
         <div class="loading-bg"></div>
-          @yield('content')
+        
+          <section>
+            @yield('content')
+          </section>
+       
           <footer>
             @include('includes.footer')
           </footer>

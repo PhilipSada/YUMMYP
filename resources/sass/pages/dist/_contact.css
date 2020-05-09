@@ -5,7 +5,7 @@
 }
 
 .enquiry-header {
-  background-color: orangered;
+  background-color: rgba(255, 68, 0, 0.959) !important;
   color: white;
 }
 
@@ -18,16 +18,11 @@
 .contact-submit {
   text-decoration: none;
   color: white;
-  padding: 0.5rem 2.3rem;
-  background-color: orangered;
+  padding: 0.9rem 2.3rem;
+  background-color: rgba(255, 68, 0, 0.959);
   border: 1px solid transparent;
   transition: all .8s ease;
   font-size: 0.8rem;
-}
-
-.contact-submit:hover {
-  background-color: orangered;
-  border: 1px solid transparent;
 }
 
 .contact-info {

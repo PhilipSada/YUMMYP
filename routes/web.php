@@ -16,22 +16,23 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-//Static pages
-Route::get('/', 'StaticPagesController@home');
-Route::get('/menu', 'StaticPagesController@menu');
-Route::get('/menu/{slug}','StaticPagesController@singleMenu');
-Route::get('/reservations','StaticPagesController@reservations');
-Route::post('/reservations','StaticPagesController@saveReservations');
-Route::get('/reservations/reservation-confirmed','StaticPagesController@reservationConfirmation');
-Route::get('/contact', 'StaticPagesController@contact');
-Route::post('/contact', 'StaticPagesController@sendMail');
-Route::get('/offers', 'StaticPagesController@offers');
-Route::post('/offers', 'StaticPagesController@registerMember');
-Route::get('/offers/thank-you', 'StaticPagesController@offersThanks');
-Route::get('/about', 'StaticPagesController@about');
-Route::get('/testing', 'StaticPagesController@testing');
-Route::get('/contact-mail', 'ContactPageController@viewMail');
-Route::get('/enquiry-received', 'StaticPagesController@mailReceived');
+
+Route::get('/', 'PagesController@home');
+Route::get('/menu', 'PagesController@menu');
+Route::get('/menu/{slug}','PagesController@singleMenu');
+Route::get('/reservations','PagesController@reservations');
+Route::post('/reservations','PagesController@saveReservations');
+Route::get('/reservations/reservation-confirmed','PagesController@reservationConfirmation');
+Route::get('/contact', 'PagesController@contact');
+Route::post('/contact', 'PagesController@sendMail');
+Route::get('/offers', 'PagesController@offers');
+Route::post('/offers', 'PagesController@registerMember');
+Route::get('/offers/thank-you', 'PagesController@offersThanks');
+Route::get('/about', 'PagesController@about');
+Route::get('/testing', 'PagesController@testing');
+Route::get('/contact-mail', 'PageController@viewMail');
+Route::get('/enquiry-received', 'PagesController@mailReceived');
+Route::get('/reservation-mail','PagesController@viewReservationMail');
 
 //admin Dashboard
 Route::get('/admin','admin\AdminController@dashboard');

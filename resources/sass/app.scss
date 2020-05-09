@@ -100,14 +100,19 @@ nav{
     
         .nav-logo{
             padding-left:1rem;
+            font-weight:700;
+            // font-family: 'Merriweather', serif;
+            span{
+                color:orangered;
+            }
             a{
                 text-decoration:none;
                 color:black;
                 font-size:1.2rem;
                 letter-spacing: 2px;
                 text-transform:uppercase;
-                font-family: 'Montserrat', sans-serif;
-                font-weight:700;
+                // font-family: 'Montserrat', sans-serif;
+                // font-weight:700;
                 cursor: pointer;
             }
         }
@@ -154,7 +159,9 @@ nav{
     height:100vh;
     width:30%;
     // background-color:rgba(0, 0, 0, 0.712);
-    background-color:rgb(0,0,0);
+    // background-color:rgb(0,0,0);
+    background-color:rgba(255, 68, 0, 0.733);
+    box-shadow: 0px 5px 5px rgba(255, 68, 0, 0.897);
     transform:translate(-100%, 0);
 
     .navigation-close{
@@ -165,7 +172,7 @@ nav{
         padding-top:1rem;
         padding-right:0.8rem;
         &:hover{
-            color:orangered;
+            color:rgba(0, 0, 0, 0.795);
         }
     }
     
@@ -182,7 +189,11 @@ nav{
         align-items:center;
         justify-content: center;
         flex-direction:column;
-        padding:10rem 0;
+        text-align:center;
+        padding-top:10rem;
+        padding-bottom:10rem;
+        padding-left:4rem;
+        // padding:10rem 0;
         li{
             list-style:none;
             text-align: center;
@@ -195,14 +206,14 @@ nav{
                 letter-spacing: 1px;
                 line-height:2;
                 &:hover{
-                    color:orangered;
+                    color:rgba(0, 0, 0, 0.795);
                 }
             }
         }
     }
 }
 .loading-bg{
-    background-color:grey;
+    background-color:lightgray;
     position:fixed;
     top:0;
     right:0;

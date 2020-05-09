@@ -37885,7 +37885,7 @@ var initialPageAnimation = function initialPageAnimation() {
     var tl = gsap.timeline();
     tl.fromTo(".hero-text", {
       x: 0,
-      y: 100,
+      y: 200,
       opacity: 0
     }, {
       x: 0,

@@ -12,9 +12,9 @@ use App\SeoSetting;
 use App\SocialAccountsSetting;
 use App\FoodCategory;
 use App\FoodItem;
+use App\Mail\ReservationMail;
 
-
-class StaticPagesController extends Controller
+class PagesController extends Controller
 {
     public function home(){
         $foodItems = FoodItem::inRandomOrder()->limit(6)->get();
@@ -26,31 +26,45 @@ class StaticPagesController extends Controller
     public function reservations(){
         return view('pages/reservations');
     }
-    public function saveReservations(){
+    public function saveReservations(Request $request){
         request()->validate([
             'firstname' => ['required', 'string', 'max:255'],
             'lastname' => ['required', 'string'],
             'email' => ['required', 'string','email'],
-            'phone_number' => ['required', 'string'],
-            'guests_total' => ['required', 'string'],
+            'phonenumber' => ['required', 'string'],
+            'gueststotal' => ['required', 'string'],
             'time' => ['required']
             
         ]);
         
+        $content = [
+            'firstname'=>request('firstname'),
+            'lastname'=>request('lastname'),
+            'email'=>request('email'),
+            'phonenumber'=>request('phonenumber'),
+            'gueststotal'=>request('gueststotal'),
+            'time'=>request('time')
+        ];
+        Mail::to($request->email)->send(new ReservationMail($content));
+
         $reservation = new Reservation();
         $reservation->firstname = request('firstname');
         $reservation->lastname = request('lastname');
         $reservation->email = request('email');
-        $reservation->phone_number = request('phone_number');
-        $reservation->guests_total = request('guests_total');
+        $reservation->phone_number = request('phonenumber');
+        $reservation->guests_total = request('gueststotal');
         $reservation->time = request('time');
         $reservation->save();
+
 
         return redirect('/reservations/reservation-confirmed');
 
     }
     public function reservationConfirmation(){
         return view('pages/reservation-confirmation');
+    }
+    public function viewReservationMail(){
+        return view('mail/reservation');
     }
     public function about(){
         return view('pages/about');

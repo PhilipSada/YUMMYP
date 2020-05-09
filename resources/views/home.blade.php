@@ -1,8 +1,7 @@
 @extends('layouts.landing-page')
-
 @section('title', 'Yummy P')
-<main data-barba="container" data-barba-namespace="home">
 @section('content')
+<main data-barba="container" data-barba-namespace="home">
   <div class="hero">
       <div class="split left-split">
           <div class="hero-text">
