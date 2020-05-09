@@ -136,8 +136,8 @@ class PagesController extends Controller
     }
     public function menu(){
         $beefItems = FoodItem::where('category_id', 1)->get();
-        $chickenItems = FoodItem::where('category_id', 1)->get();
-        $kingSnackItems = FoodItem::where('category_id', 1)->get();
+        $chickenItems = FoodItem::where('category_id', 2)->get();
+        $kingSnackItems = FoodItem::where('category_id', 3)->get();
         
         return view('menu/all-categories', [
             'beefItems'=>  $beefItems,
