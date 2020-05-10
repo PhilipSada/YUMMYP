@@ -18,7 +18,7 @@
          <div style='margin-top:2rem; margin-bottom:2rem; margin-left:2rem; width:730px;'> 
     
             <div style="text-align:center">
-               <h2>Yummy</h2>
+               <h2>Yummy P.</h2>
             </div>
         
             <h2 style="color:rgba(0, 0, 0, 0.801)">Hello {{$content['firstname']}} {{$content['lastname']}},</h2>

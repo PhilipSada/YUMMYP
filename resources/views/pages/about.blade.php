@@ -1,8 +1,7 @@
 @extends('layouts.landing-page')
 
-@section('title')
-About - {{$settings['general']->site_title}}
-@endsection
+@section('title', 'About')
+
 
 {{--  @section('description')
 Philly Burgers have been around for every long time. Having high quality burgers have been one of the reasons our customers keep coming back

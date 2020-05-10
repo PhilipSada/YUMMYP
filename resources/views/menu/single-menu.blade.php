@@ -45,22 +45,17 @@
                                 <td>2,846.2</td>
                             </tr>
                             <tr>
-                                <td>fat(G)</td>
+                                <td>Fat(G)</td>
                                 <td>16.0</td>
                                 <td>40.3</td>
                             </tr>
                             <tr>
-                                <td>saturated of it(G)</td>
-                                <td>6.0</td>
-                                <td>15.1</td>
-                            </tr>
-                            <tr>
-                                <td>carbohydrates(G)</td>
+                                <td>Carbohydrates(G)</td>
                                 <td>17.0</td>
                                 <td>42.9</td>
                             </tr>
                             <tr>
-                                <td>protein(G)</td>
+                                <td>Protein(G)</td>
                                 <td>15.0</td>
                                 <td>37.8</td>
                             </tr>

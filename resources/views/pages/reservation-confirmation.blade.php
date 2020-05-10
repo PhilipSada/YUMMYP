@@ -1,8 +1,6 @@
 @extends('layouts.landing-page')
 
-@section('title')
-Reservation-confirmation - {{$settings['general']->site_title}}
-@endsection
+@section('title', 'Reservation-Confirmation')
 
 
 @section('content')

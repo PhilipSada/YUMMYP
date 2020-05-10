@@ -86,6 +86,9 @@ table {
   
    
 }
+.card-text{
+    text-align:center;
+}
 nav{
 
     .navigation{
@@ -335,6 +338,13 @@ nav{
           }
       }
   }
+  .content-box{
+
+    h2{
+        font-size:1.8rem;
+        padding-bottom:1rem;
+    }
+  }
    
 }
 @media (min-width: 371px) and (max-width: 500px) {
@@ -342,7 +352,13 @@ nav{
         width:70%;
       
     }
-  
+    .content-box{
+
+        h2{
+            font-size:1.8rem;
+            padding-bottom:1rem;
+        }
+    }
 }
 @media (min-width: 501px) and (max-width: 540px) {
    
@@ -350,18 +366,26 @@ nav{
         width:70%;
       
     }
-    body{
-        background-color:rgba(211, 211, 211, 0.082) !important;
-    }
+    .content-box{
+
+        h2{
+            font-size:1.8rem;
+            padding-bottom:1rem;
+        }
+   }
 }
 @media (min-width: 541px) and (max-width: 767px) {
     .navigation-menu{
         width:70%;
       
     }
-    body{
-        background-color:rgba(211, 211, 211, 0.082) !important;
-    }
+    .content-box{
+
+        h2{
+            font-size:1.8rem;
+            padding-bottom:1rem;
+        }
+   }
  
 }
   
