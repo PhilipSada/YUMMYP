@@ -39,94 +39,86 @@ footer{
 }
 
 @media (min-width:0px) and (max-width:370px){
-    .footer{
-        padding-top:1rem;
-        padding-bottom:1.5rem;
-    }
     .first-footer{
         p{
-            font-size:0.8rem;
+            font-size:0.9rem;
         }
         
     }
     .social-icon-footer{
-        font-size:10px;
+        font-size:12px;
+    
        
     }
 }
 @media (min-width: 371px) and (max-width: 500px) {
-    .faq-title{
-        font-size:1rem;
-    }
-    .faq-body{
-        h4{
-            font-size:1rem;
-            font-weight:700;
-        }
+    .first-footer{
         p{
-            font-size:0.8rem;
+            font-size:0.9rem;
         }
+        
+    }
+    .social-icon-footer{
+        font-size:12px;
+    
+       
     }
   
 }
 @media (min-width: 501px) and (max-width: 540px) {
-    .faq-title{
-        font-size:1rem;
-    }
-    .faq-body{
-        h4{
-            font-size:1rem;
-            font-weight:700;
-        }
+    .first-footer{
         p{
-            font-size:0.8rem;
+            font-size:0.9rem;
         }
+        
+    }
+    .social-icon-footer{
+        font-size:12px;
+    
+       
     }
   
 }
 @media (min-width: 541px) and (max-width: 767px) {
-    .faq-title{
-        font-size:1rem;
-    }
-    .faq-body{
-        h4{
-            font-size:1rem;
-            font-weight:700;
-        }
+
+    .first-footer{
         p{
-            font-size:0.8rem;
+            font-size:0.9rem;
         }
+        
     }
-  
+    .social-icon-footer{
+        font-size:12px;
+    
+       
+    }
 }
   
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) and (max-width: 900px) {
-    .faq-title{
-        font-size:1rem;
-    }
-    .faq-body{
-        h4{
-            font-size:1rem;
-            font-weight:700;
-        }
+    .first-footer{
         p{
-            font-size:0.8rem;
+            font-size:0.9rem;
         }
+        
+    }
+    .social-icon-footer{
+        font-size:12px;
+    
+       
     }
 }
 @media (min-width: 901px) and (max-width: 991px) {
-    .faq-title{
-        font-size:1rem;
-    }
-    .faq-body{
-        h4{
-            font-size:1rem;
-            font-weight:700;
-        }
+    .first-footer{
         p{
-            font-size:0.8rem;
+            font-size:0.9rem;
         }
+        
+    }
+    .social-icon-footer{
+        font-size:12px;
+    
+       
     }
 }
 // Large devices (desktops, 992px and up)

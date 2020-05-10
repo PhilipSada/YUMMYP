@@ -30,9 +30,14 @@
    }
 }
 @media (min-width:0px) and (max-width:370px){
-   .contact-container{
-   margin-right:2rem;
-   }
+    #contact-page{
+        padding-left:50px;
+        padding-right:80px;
+        padding-bottom:1000px;
+        .card{
+            width:150%;
+        }
+    }
    .contact-submit{
        font-size:0.7rem;
        padding:0.5rem 2rem;
@@ -49,6 +54,12 @@
    }
 }
 @media (min-width: 371px) and (max-width: 500px) {
+    #contact-page{
+        padding-bottom:1000px;
+        .card{
+            width:120%;
+        }
+    }
     .contact-submit{
         font-size:0.7rem;
         padding:0.5rem 2rem;
@@ -66,7 +77,12 @@
  
 }
 @media (min-width: 501px) and (max-width: 540px) {
-   
+    #contact-page{
+        padding-bottom:1000px;
+        .card{
+            width:120%;
+        }
+    }
    .contact-submit{
        font-size:0.7rem;
        padding:0.5rem 2rem;
@@ -83,6 +99,12 @@
    }
 }
 @media (min-width: 541px) and (max-width: 767px) {
+    #contact-page{
+        padding-bottom:1000px;
+        .card{
+            width:100%;
+        }
+    }
    .contact-submit{
        font-size:0.7rem;
        padding:0.5rem 2rem;
@@ -102,6 +124,12 @@
  
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) and (max-width: 900px) {
+    #contact-page{
+        padding-bottom:700px;
+        .card{
+            width:140%;
+        }
+    }
    .contact-submit{
        font-size:0.7rem;
        padding:0.5rem 2rem;
@@ -118,6 +146,12 @@
    }
 }
 @media (min-width: 901px) and (max-width: 991px) {
+    #contact-page{
+        padding-bottom:700px;
+        .card{
+            width:120%;
+        }
+    }
    .contact-submit{
        font-size:0.7rem;
        padding:0.5rem 2rem;

@@ -1,17 +1,7 @@
 #menu-page{
     padding:60px;
     background-color:rgba(211, 211, 211, 0.082);
-   #food-preview{
-       padding:0;
-       background:transparent;
-       h2{
-           color:white;
-           text-transform:uppercase;
-       }
-       .button-rounded{
-           margin-bottom:2rem;
-       }
-   }
+
    .main-food-menu{
     // background-color:rgba(211, 211, 211, 0.082);
     h4{
@@ -63,27 +53,171 @@
 }
    
  }
- @media (min-width: 0px) and (max-width: 767px) {
-   #menu-page{
-      padding:20px;
-   }
-      
-       
-   
- 
-    
- }
- 
- // Medium devices (tablets, 768px and up)
- @media (min-width: 768px) and (max-width: 991px) {
+ @media (min-width:0px) and (max-width:370px){
+  
     #menu-page{
-       padding:20px;
+        padding:50px;
+        .main-food-menu{
+            h4{
+                font-size:1.8rem;
+            }
+            .menu-card-container{
+              margin-left:0rem;
+              margin-right:0rem;
+            }
+            .menu-card{
+                width:15rem;
+                height:15rem;
+            }
+        }
+    }
+   
+}
+@media (min-width: 371px) and (max-width: 500px) {
+    #menu-page{
+        .main-food-menu{
+            .menu-card-container{
+              margin-left:3rem;
+              margin-right:8rem;
+            }
+            .menu-card{
+                width:18rem;
+                height:15rem;
+            }
+        }
+    }
+  
+}
+@media (min-width: 501px) and (max-width: 540px) {
+    #menu-page{
+        .main-food-menu{
+            .menu-card-container{
+              margin-left:3rem;
+              margin-right:8rem;
+            }
+            .menu-card{
+                width:18rem;
+                height:15rem;
+            }
+        }
+    }
+  
+}
+@media (min-width: 541px) and (max-width: 767px) {
+    #menu-page{
+        .main-food-menu{
+            .menu-card-container{
+              margin-left:9rem;
+              margin-right:8rem;
+            }
+            .menu-card{
+                width:18rem;
+                height:15rem;
+            }
+        }
+    }
+ 
+}
+  
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 900px) {
+    #menu-page{
+        .main-food-menu{
+            .menu-card-container{
+              margin-left:12rem;
+              margin-right:8rem;
+            }
+            .menu-card{
+                width:18rem;
+                height:15rem;
+            }
+        }
+    }
+}
+@media (min-width: 901px) and (max-width: 991px) {
+    #menu-page{
+        .main-food-menu{
+            .menu-card-container{
+              margin-left:15rem;
+              margin-right:8rem;
+            }
+            // .menu-card{
+            //     width:18rem;
+            //     height:15rem;
+            // }
+        }
+    }
+}
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1099px) {
+    #menu-page{
+        .main-food-menu{
+            .menu-card-container{
+              margin-left:20rem;
+              margin-right:8rem;
+            }
+            // .menu-card{
+            //     width:18rem;
+            //     height:15rem;
+            // }
+        }
+    }
+}
+@media (min-width: 1100px) and (max-width: 1119px) {
+    #menu-page{
+        .main-food-menu{
+            .menu-card-container{
+              margin-left:20rem;
+              margin-right:8rem;
+            }
+            // .menu-card{
+            //     width:18rem;
+            //     height:15rem;
+            // }
+        }
+    }
+}
+@media (min-width: 1120px) and (max-width: 1199px) {
+    #menu-page{
+        .main-food-menu{
+            .menu-card-container{
+              margin-left:20rem;
+              margin-right:8rem;
+            }
+            // .menu-card{
+            //     width:18rem;
+            //     height:15rem;
+            // }
+        }
+    }
+}
+  
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) and (max-width: 1399px) {
+    #menu-page{
+        .main-food-menu{
+            .menu-card-container{
+              margin-left:14rem;
+              margin-right:8rem;
+            }
+            // .menu-card{
+            //     width:18rem;
+            //     height:15rem;
+            // }
+        }
     }
  }
- // Large devices (desktops, 992px and up)
- @media (min-width: 992px) and (max-width: 1199px) {
- 
- }
- 
- // Extra large devices (large desktops, 1200px and up)
- @media (min-width: 1200px) { }
+@media (min-width: 1400px) and (max-width: 1500px) {
+    // #menu-page{
+    //     .main-food-menu{
+    //         .menu-card-container{ 
+    //           margin-left:14rem;
+    //           margin-right:8rem;
+    //         }
+    //         // .menu-card{
+    //         //     width:18rem;
+    //         //     height:15rem;
+    //         // }
+    //     }
+    // }
+}

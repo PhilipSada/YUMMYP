@@ -141,14 +141,608 @@
         }
     }
 }
-@media (min-width: 576px) { }
 
+  
+@media (min-width:0px) and (max-width:370px){
+    .hero{
+        .hero-text{
+            .intro{
+                font-size:1.5rem;
+            }
+            .hero-title{
+                font-size:1.5rem;
+                letter-spacing: 1px;
+            }
+        
+            .details{
+                // padding-bottom:3rem;
+                display:none;
+            }
+        }
+        .social-icons{
+            .fa-instagram, .fa-twitter, .fa-facebook{
+                font-size:18px;
+            }
+        }
+        .right-split-image-container{
+            width:100%;
+        }
+        .right-split-side-bar{
+          display:none;
+        }
+        .booking{
+          display: none;
+        }
+    }
+    .home-food-menu{
+        height:100vh;
+        padding-bottom:1700px;
+        h4{
+            font-size:1.6rem;
+            padding-top:4rem;
+        }
+        .more-food-menu-container{
+            // margin:4rem 2rem;
+            margin-left:3rem;
+        }
+        .more-food-menu-link{
+            padding:1rem 2rem;
+        }
+    
+        .menu-card-container{
+            margin-left:3rem;
+            margin-right:0rem;
+            margin-top:2rem;
+            margin-bottom:2rem;
+        }
+        .menu-card{
+            width:15rem;
+            height:15rem;
+        }
+    }
+  
+   
+}
+@media (min-width: 371px) and (max-width: 500px) {
+    .hero{
+        .hero-text{
+            .intro{
+                font-size:2rem;
+            }
+            .hero-title{
+                font-size:2rem;
+                letter-spacing: 1px;
+            }
+        
+            .details{
+                // padding-bottom:3rem;
+                display:none;
+            }
+        }
+        .social-icons{
+            .fa-instagram, .fa-twitter, .fa-facebook{
+                font-size:18px;
+            }
+        }
+        .right-split-image-container{
+            width:100%;
+        }
+        .right-split-side-bar{
+          display:none;
+        }
+        .booking{
+          display: none;
+        }
+    }
+    .home-food-menu{
+        height:100vh;
+        padding-bottom:1700px;
+        h4{
+            font-size:2rem;
+            padding-top:4rem;
+        }
+        .more-food-menu-container{
+            // margin:4rem 2rem;
+            margin-left:3rem;
+        }
+        .more-food-menu-link{
+            padding:1rem 2rem;
+        }
+    
+        .menu-card-container{
+            margin-left:7rem;
+            margin-right:8rem;
+            margin-top:2rem;
+            margin-bottom:2rem;
+        }
+        .menu-card{
+            width:18rem;
+            height:15rem;
+        }
+    }
+}
+@media (min-width: 501px) and (max-width: 540px) {
+    .hero{
+        .hero-text{
+            .intro{
+                font-size:2rem;
+            }
+            .hero-title{
+                font-size:2rem;
+                letter-spacing: 1px;
+            }
+        
+            .details{
+                // padding-bottom:3rem;
+                display:none;
+            }
+        }
+        .social-icons{
+            .fa-instagram, .fa-twitter, .fa-facebook{
+                font-size:18px;
+            }
+        }
+        .right-split-image-container{
+            width:100%;
+        }
+        .right-split-side-bar{
+          display:none;
+        }
+        .booking{
+          display: none;
+        }
+    }
+    .home-food-menu{
+        height:100vh;
+        padding-bottom:1700px;
+        h4{
+            font-size:2rem;
+            padding-top:4rem;
+        }
+        .more-food-menu-container{
+            // margin:4rem 2rem;
+            margin-left:3rem;
+        }
+        .more-food-menu-link{
+            padding:1rem 2rem;
+        }
+    
+        .menu-card-container{
+            margin-left:7rem;
+            margin-right:8rem;
+            margin-top:2rem;
+            margin-bottom:2rem;
+        }
+        .menu-card{
+            width:18rem;
+            height:15rem;
+        }
+    }
+  
+}
+@media (min-width: 541px) and (max-width: 767px) {
+    .hero{
+        .hero-text{
+            .intro{
+                font-size:2rem;
+            }
+            .hero-title{
+                font-size:2rem;
+                letter-spacing: 1px;
+            }
+        
+            .details{
+                // padding-bottom:3rem;
+                display:none;
+            }
+        }
+        .social-icons{
+            .fa-instagram, .fa-twitter, .fa-facebook{
+                font-size:18px;
+            }
+        }
+        .right-split-image-container{
+            width:100%;
+        }
+        .right-split-side-bar{
+          display:none;
+        }
+        .booking{
+          display: none;
+        }
+    }
+    .home-food-menu{
+        height:100vh;
+        padding-bottom:1700px;
+        h4{
+            font-size:2rem;
+            padding-top:4rem;
+        }
+        .more-food-menu-container{
+            // margin:4rem 2rem;
+            margin-left:3rem;
+        }
+        .more-food-menu-link{
+            padding:1rem 2rem;
+        }
+    
+        .menu-card-container{
+            margin-left:12rem;
+            margin-right:8rem;
+            margin-top:2rem;
+            margin-bottom:2rem;
+        }
+        .menu-card{
+            width:18rem;
+            height:15rem;
+        }
+    }
+  
+}
+  
 // Medium devices (tablets, 768px and up)
-@media (min-width: 768px) { }
-
+@media (min-width: 768px) and (max-width: 900px) {
+    .hero{
+        .hero-text{
+            .intro{
+                font-size:2rem;
+            }
+            .hero-title{
+                font-size:2rem;
+                letter-spacing: 1px;
+                margin-bottom:3rem;
+            }
+        
+            .details{
+                padding-bottom:3rem;
+                display:none;
+            }
+        }
+        .social-icons{
+            .fa-instagram, .fa-twitter, .fa-facebook{
+                font-size:18px;
+            }
+        }
+        .right-split-image-container{
+            width:100%;
+        }
+        .right-split-side-bar{
+          display:none;
+        }
+        .booking{
+          padding:1rem 2rem;
+        }
+    }
+    .home-food-menu{
+        height:100vh;
+        padding-bottom:1700px;
+        h4{
+            font-size:2rem;
+            padding-top:4rem;
+        }
+        .more-food-menu-container{
+            // margin:4rem 2rem;
+            margin-left:3rem;
+        }
+        .more-food-menu-link{
+            padding:1rem 2rem;
+        }
+    
+        .menu-card-container{
+            margin-left:15rem;
+            margin-right:8rem;
+            margin-top:2rem;
+            margin-bottom:2rem;
+        }
+        .menu-card{
+            width:18rem;
+            height:15rem;
+        }
+    }
+}
+@media (min-width: 901px) and (max-width: 991px) {
+    .hero{
+        .hero-text{
+            .intro{
+                font-size:2rem;
+            }
+            .hero-title{
+                font-size:2rem;
+                letter-spacing: 1px;
+                margin-bottom:4rem;
+            }
+        
+            .details{
+                padding-bottom:3rem;
+                display:none;
+            }
+        }
+        .social-icons{
+            .fa-instagram, .fa-twitter, .fa-facebook{
+                font-size:18px;
+            }
+        }
+        .right-split-image-container{
+            width:100%;
+        }
+        .right-split-side-bar{
+          display:none;
+        }
+        .booking{
+          padding:1rem 2rem;
+        }
+    }
+    .home-food-menu{
+        height:100vh;
+        padding-bottom:1700px;
+        h4{
+            font-size:2rem;
+            padding-top:4rem;
+        }
+        .more-food-menu-container{
+            // margin:4rem 2rem;
+            margin-left:3rem;
+        }
+        .more-food-menu-link{
+            padding:1rem 2rem;
+        }
+    
+        .menu-card-container{
+            margin-left:20rem;
+            margin-right:8rem;
+            margin-top:2rem;
+            margin-bottom:2rem;
+        }
+        .menu-card{
+            width:18rem;
+            height:15rem;
+        }
+    }
+}
 // Large devices (desktops, 992px and up)
-@media (min-width: 992px) { }
-
+@media (min-width: 992px) and (max-width: 1099px) {
+    .hero{
+        .hero-text{
+            .intro{
+                font-size:2.5rem;
+            }
+            .hero-title{
+                font-size:2.5rem;
+                letter-spacing: 1px;
+                margin-bottom:4rem;
+            }
+        
+            .details{
+                // padding-bottom:3rem;
+                display:none;
+            }
+        }
+        .social-icons{
+            .fa-instagram, .fa-twitter, .fa-facebook{
+                font-size:18px;
+            }
+        }
+        .right-split-image-container{
+            width:100%;
+        }
+        .right-split-side-bar{
+          display:none;
+        }
+        .booking{
+        
+          padding:1rem 2rem;
+        }
+    }
+    .home-food-menu{
+        height:100vh;
+        padding-bottom:1000px;
+        h4{
+            font-size:2rem;
+            padding-top:4rem;
+        }
+        .more-food-menu-container{
+            // margin:4rem 2rem;
+            margin-left:3rem;
+        }
+        .more-food-menu-link{
+            padding:1rem 2rem;
+        }
+    
+        // .menu-card-container{
+        //     margin-left:20rem;
+        //     margin-right:8rem;
+        //     margin-top:2rem;
+        //     margin-bottom:2rem;
+        // }
+        .menu-card{
+            width:18rem;
+            height:15rem;
+        }
+    }
+}
+@media (min-width: 1100px) and (max-width: 1119px) {
+    .hero{
+        .hero-text{
+            .intro{
+                font-size:2.5rem;
+            }
+            .hero-title{
+                font-size:2.5rem;
+                letter-spacing: 1px;
+                margin-bottom:4rem;
+            }
+        
+            .details{
+                // padding-bottom:3rem;
+                display:none;
+            }
+        }
+        .social-icons{
+            .fa-instagram, .fa-twitter, .fa-facebook{
+                font-size:18px;
+            }
+        }
+        .right-split-image-container{
+            width:100%;
+        }
+        .right-split-side-bar{
+          display:none;
+        }
+        .booking{
+        
+          padding:1rem 2rem;
+        }
+    }
+    .home-food-menu{
+        height:100vh;
+        padding-bottom:1000px;
+        h4{
+            font-size:2rem;
+            padding-top:4rem;
+        }
+        // .more-food-menu-container{
+        //     // margin:4rem 2rem;
+        //     margin-left:3rem;
+        // }
+        .more-food-menu-link{
+            padding:1rem 2rem;
+        }
+    
+        // .menu-card-container{
+        //     margin-left:20rem;
+        //     margin-right:8rem;
+        //     margin-top:2rem;
+        //     margin-bottom:2rem;
+        // }
+        .menu-card{
+            width:18rem;
+            height:15rem;
+        }
+    }
+}
+@media (min-width: 1120px) and (max-width: 1199px) {
+    .hero{
+        .hero-text{
+            .intro{
+                font-size:2.8rem;
+            }
+            .hero-title{
+                font-size:2.8rem;
+                letter-spacing: 1px;
+                margin-bottom:4rem;
+            }
+        
+            .details{
+                // padding-bottom:3rem;
+                display:none;
+            }
+        }
+        .social-icons{
+            .fa-instagram, .fa-twitter, .fa-facebook{
+                font-size:18px;
+            }
+        }
+        .right-split-image-container{
+            width:100%;
+        }
+        .right-split-side-bar{
+          display:none;
+        }
+        .booking{
+        
+          padding:1rem 2rem;
+        }
+    }
+    .home-food-menu{
+        height:100vh;
+        padding-bottom:1000px;
+        h4{
+            font-size:2rem;
+            padding-top:4rem;
+        }
+        // .more-food-menu-container{
+        //     // margin:4rem 2rem;
+        //     margin-left:3rem;
+        // }
+        .more-food-menu-link{
+            padding:1rem 2rem;
+        }
+    
+        // .menu-card-container{
+        //     margin-left:20rem;
+        //     margin-right:8rem;
+        //     margin-top:2rem;
+        //     margin-bottom:2rem;
+        // }
+        // .menu-card{
+        //     width:18rem;
+        //     height:15rem;
+        // }
+    }
+}
+  
 // Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { }
+@media (min-width: 1200px) and (max-width: 1340px) {
+    .hero{
+        .hero-text{
+            .intro{
+                font-size:2.8rem;
+            }
+            .hero-title{
+                font-size:2.8rem;
+                letter-spacing: 1px;
+                margin-bottom:4rem;
+            }
+        
+            .details{
+                // padding-bottom:3rem;
+                display:none;
+            }
+        }
+        .social-icons{
+            .fa-instagram, .fa-twitter, .fa-facebook{
+                font-size:18px;
+            }
+        }
+        .right-split-image-container{
+            width:100%;
+        }
+        .right-split-side-bar{
+          display:none;
+        }
+        .booking{
+        
+          padding:1rem 2rem;
+        }
+    }
+    .home-food-menu{
+        height:100vh;
+        padding-bottom:1000px;
+        h4{
+            font-size:2rem;
+            padding-top:4rem;
+        }
+        .more-food-menu-container{
+            // margin:4rem 2rem;
+            margin-right:5rem;
+        }
+        .more-food-menu-link{
+            padding:1rem 2rem;
+        }
+    
+        // .menu-card-container{
+        //     margin-left:20rem;
+        //     margin-right:8rem;
+        //     margin-top:2rem;
+        //     margin-bottom:2rem;
+        // }
+        // .menu-card{
+        //     width:18rem;
+        //     height:15rem;
+        // }
+    }
+ }
+@media (min-width: 1341px) and (max-width: 1500px) {
+   
+}
 

@@ -145,3 +145,463 @@
 .home-food-menu .menu-card:hover {
   box-shadow: 0px 16px 32px 0px grey;
 }
+
+@media (min-width: 0px) and (max-width: 370px) {
+  .hero .hero-text .intro {
+    font-size: 2rem;
+  }
+  .hero .hero-text .hero-title {
+    font-size: 2rem;
+    letter-spacing: 1px;
+  }
+  .hero .hero-text .details {
+    display: none;
+  }
+  .hero .social-icons .fa-instagram, .hero .social-icons .fa-twitter, .hero .social-icons .fa-facebook {
+    font-size: 18px;
+  }
+  .hero .right-split-image-container {
+    width: 100%;
+  }
+  .hero .right-split-side-bar {
+    display: none;
+  }
+  .hero .booking {
+    display: none;
+  }
+  .home-food-menu {
+    height: 100vh;
+    margin-bottom: 70rem;
+  }
+  .home-food-menu h4 {
+    font-size: 2rem;
+    padding-top: 4rem;
+  }
+  .home-food-menu .more-food-menu-container {
+    margin-left: 3rem;
+  }
+  .home-food-menu .more-food-menu-link {
+    padding: 1rem 2rem;
+  }
+  .home-food-menu .menu-card-container {
+    margin-left: 7rem;
+    margin-right: 8rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .home-food-menu .menu-card {
+    width: 18rem;
+    height: 15rem;
+  }
+}
+
+@media (min-width: 371px) and (max-width: 500px) {
+  .hero .hero-text .intro {
+    font-size: 2rem;
+  }
+  .hero .hero-text .hero-title {
+    font-size: 2rem;
+    letter-spacing: 1px;
+  }
+  .hero .hero-text .details {
+    display: none;
+  }
+  .hero .social-icons .fa-instagram, .hero .social-icons .fa-twitter, .hero .social-icons .fa-facebook {
+    font-size: 18px;
+  }
+  .hero .right-split-image-container {
+    width: 100%;
+  }
+  .hero .right-split-side-bar {
+    display: none;
+  }
+  .hero .booking {
+    display: none;
+  }
+  .home-food-menu {
+    height: 100vh;
+    margin-bottom: 70rem;
+  }
+  .home-food-menu h4 {
+    font-size: 2rem;
+    padding-top: 4rem;
+  }
+  .home-food-menu .more-food-menu-container {
+    margin-left: 3rem;
+  }
+  .home-food-menu .more-food-menu-link {
+    padding: 1rem 2rem;
+  }
+  .home-food-menu .menu-card-container {
+    margin-left: 7rem;
+    margin-right: 8rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .home-food-menu .menu-card {
+    width: 18rem;
+    height: 15rem;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 540px) {
+  .hero .hero-text .intro {
+    font-size: 2rem;
+  }
+  .hero .hero-text .hero-title {
+    font-size: 2rem;
+    letter-spacing: 1px;
+  }
+  .hero .hero-text .details {
+    display: none;
+  }
+  .hero .social-icons .fa-instagram, .hero .social-icons .fa-twitter, .hero .social-icons .fa-facebook {
+    font-size: 18px;
+  }
+  .hero .right-split-image-container {
+    width: 100%;
+  }
+  .hero .right-split-side-bar {
+    display: none;
+  }
+  .hero .booking {
+    display: none;
+  }
+  .home-food-menu {
+    height: 100vh;
+    margin-bottom: 70rem;
+  }
+  .home-food-menu h4 {
+    font-size: 2rem;
+    padding-top: 4rem;
+  }
+  .home-food-menu .more-food-menu-container {
+    margin-left: 3rem;
+  }
+  .home-food-menu .more-food-menu-link {
+    padding: 1rem 2rem;
+  }
+  .home-food-menu .menu-card-container {
+    margin-left: 7rem;
+    margin-right: 8rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .home-food-menu .menu-card {
+    width: 18rem;
+    height: 15rem;
+  }
+}
+
+@media (min-width: 541px) and (max-width: 767px) {
+  .hero .hero-text .intro {
+    font-size: 2rem;
+  }
+  .hero .hero-text .hero-title {
+    font-size: 2rem;
+    letter-spacing: 1px;
+  }
+  .hero .hero-text .details {
+    display: none;
+  }
+  .hero .social-icons .fa-instagram, .hero .social-icons .fa-twitter, .hero .social-icons .fa-facebook {
+    font-size: 18px;
+  }
+  .hero .right-split-image-container {
+    width: 100%;
+  }
+  .hero .right-split-side-bar {
+    display: none;
+  }
+  .hero .booking {
+    display: none;
+  }
+  .home-food-menu {
+    height: 100vh;
+    margin-bottom: 70rem;
+  }
+  .home-food-menu h4 {
+    font-size: 2rem;
+    padding-top: 4rem;
+  }
+  .home-food-menu .more-food-menu-container {
+    margin-left: 3rem;
+  }
+  .home-food-menu .more-food-menu-link {
+    padding: 1rem 2rem;
+  }
+  .home-food-menu .menu-card-container {
+    margin-left: 12rem;
+    margin-right: 8rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .home-food-menu .menu-card {
+    width: 18rem;
+    height: 15rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 900px) {
+  .hero .hero-text .intro {
+    font-size: 2rem;
+  }
+  .hero .hero-text .hero-title {
+    font-size: 2rem;
+    letter-spacing: 1px;
+    margin-bottom: 3rem;
+  }
+  .hero .hero-text .details {
+    padding-bottom: 3rem;
+    display: none;
+  }
+  .hero .social-icons .fa-instagram, .hero .social-icons .fa-twitter, .hero .social-icons .fa-facebook {
+    font-size: 18px;
+  }
+  .hero .right-split-image-container {
+    width: 100%;
+  }
+  .hero .right-split-side-bar {
+    display: none;
+  }
+  .hero .booking {
+    padding: 1rem 2rem;
+  }
+  .home-food-menu {
+    height: 100vh;
+    margin-bottom: 70rem;
+  }
+  .home-food-menu h4 {
+    font-size: 2rem;
+    padding-top: 4rem;
+  }
+  .home-food-menu .more-food-menu-container {
+    margin-left: 3rem;
+  }
+  .home-food-menu .more-food-menu-link {
+    padding: 1rem 2rem;
+  }
+  .home-food-menu .menu-card-container {
+    margin-left: 15rem;
+    margin-right: 8rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .home-food-menu .menu-card {
+    width: 18rem;
+    height: 15rem;
+  }
+}
+
+@media (min-width: 901px) and (max-width: 991px) {
+  .hero .hero-text .intro {
+    font-size: 2rem;
+  }
+  .hero .hero-text .hero-title {
+    font-size: 2rem;
+    letter-spacing: 1px;
+    margin-bottom: 4rem;
+  }
+  .hero .hero-text .details {
+    padding-bottom: 3rem;
+    display: none;
+  }
+  .hero .social-icons .fa-instagram, .hero .social-icons .fa-twitter, .hero .social-icons .fa-facebook {
+    font-size: 18px;
+  }
+  .hero .right-split-image-container {
+    width: 100%;
+  }
+  .hero .right-split-side-bar {
+    display: none;
+  }
+  .hero .booking {
+    padding: 1rem 2rem;
+  }
+  .home-food-menu {
+    height: 100vh;
+    margin-bottom: 70rem;
+  }
+  .home-food-menu h4 {
+    font-size: 2rem;
+    padding-top: 4rem;
+  }
+  .home-food-menu .more-food-menu-container {
+    margin-left: 3rem;
+  }
+  .home-food-menu .more-food-menu-link {
+    padding: 1rem 2rem;
+  }
+  .home-food-menu .menu-card-container {
+    margin-left: 20rem;
+    margin-right: 8rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .home-food-menu .menu-card {
+    width: 18rem;
+    height: 15rem;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1099px) {
+  .hero .hero-text .intro {
+    font-size: 2.5rem;
+  }
+  .hero .hero-text .hero-title {
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+    margin-bottom: 4rem;
+  }
+  .hero .hero-text .details {
+    display: none;
+  }
+  .hero .social-icons .fa-instagram, .hero .social-icons .fa-twitter, .hero .social-icons .fa-facebook {
+    font-size: 18px;
+  }
+  .hero .right-split-image-container {
+    width: 100%;
+  }
+  .hero .right-split-side-bar {
+    display: none;
+  }
+  .hero .booking {
+    padding: 1rem 2rem;
+  }
+  .home-food-menu {
+    height: 100vh;
+    margin-bottom: 20rem;
+  }
+  .home-food-menu h4 {
+    font-size: 2rem;
+    padding-top: 4rem;
+  }
+  .home-food-menu .more-food-menu-container {
+    margin-left: 3rem;
+  }
+  .home-food-menu .more-food-menu-link {
+    padding: 1rem 2rem;
+  }
+  .home-food-menu .menu-card {
+    width: 18rem;
+    height: 15rem;
+  }
+}
+
+@media (min-width: 1100px) and (max-width: 1119px) {
+  .hero .hero-text .intro {
+    font-size: 2.5rem;
+  }
+  .hero .hero-text .hero-title {
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+    margin-bottom: 4rem;
+  }
+  .hero .hero-text .details {
+    display: none;
+  }
+  .hero .social-icons .fa-instagram, .hero .social-icons .fa-twitter, .hero .social-icons .fa-facebook {
+    font-size: 18px;
+  }
+  .hero .right-split-image-container {
+    width: 100%;
+  }
+  .hero .right-split-side-bar {
+    display: none;
+  }
+  .hero .booking {
+    padding: 1rem 2rem;
+  }
+  .home-food-menu {
+    height: 100vh;
+    margin-bottom: 20rem;
+  }
+  .home-food-menu h4 {
+    font-size: 2rem;
+    padding-top: 4rem;
+  }
+  .home-food-menu .more-food-menu-link {
+    padding: 1rem 2rem;
+  }
+  .home-food-menu .menu-card {
+    width: 18rem;
+    height: 15rem;
+  }
+}
+
+@media (min-width: 1120px) and (max-width: 1199px) {
+  .hero .hero-text .intro {
+    font-size: 2.8rem;
+  }
+  .hero .hero-text .hero-title {
+    font-size: 2.8rem;
+    letter-spacing: 1px;
+    margin-bottom: 4rem;
+  }
+  .hero .hero-text .details {
+    display: none;
+  }
+  .hero .social-icons .fa-instagram, .hero .social-icons .fa-twitter, .hero .social-icons .fa-facebook {
+    font-size: 18px;
+  }
+  .hero .right-split-image-container {
+    width: 100%;
+  }
+  .hero .right-split-side-bar {
+    display: none;
+  }
+  .hero .booking {
+    padding: 1rem 2rem;
+  }
+  .home-food-menu {
+    height: 100vh;
+    margin-bottom: 30rem;
+  }
+  .home-food-menu h4 {
+    font-size: 2rem;
+    padding-top: 4rem;
+  }
+  .home-food-menu .more-food-menu-link {
+    padding: 1rem 2rem;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1340px) {
+  .hero .hero-text .intro {
+    font-size: 2.8rem;
+  }
+  .hero .hero-text .hero-title {
+    font-size: 2.8rem;
+    letter-spacing: 1px;
+    margin-bottom: 4rem;
+  }
+  .hero .hero-text .details {
+    display: none;
+  }
+  .hero .social-icons .fa-instagram, .hero .social-icons .fa-twitter, .hero .social-icons .fa-facebook {
+    font-size: 18px;
+  }
+  .hero .right-split-image-container {
+    width: 100%;
+  }
+  .hero .right-split-side-bar {
+    display: none;
+  }
+  .hero .booking {
+    padding: 1rem 2rem;
+  }
+  .home-food-menu {
+    height: 100vh;
+    margin-bottom: 30rem;
+  }
+  .home-food-menu h4 {
+    font-size: 2rem;
+    padding-top: 4rem;
+  }
+  .home-food-menu .more-food-menu-container {
+    margin-right: 5rem;
+  }
+  .home-food-menu .more-food-menu-link {
+    padding: 1rem 2rem;
+  }
+}

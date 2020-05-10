@@ -105,28 +105,365 @@
     //     }
     // }
    
- }
- @media (min-width: 0px) and (max-width: 767px) {
-   #single-menu-page{
-      padding:20px;
-   }
-      
-       
-   
- 
-    
- }
- 
- // Medium devices (tablets, 768px and up)
- @media (min-width: 768px) and (max-width: 991px) {
+}
+ @media (min-width:0px) and (max-width:370px){
     #single-menu-page{
-       padding:20px;
+        .card{
+            width:150%;
+            margin-left:-2rem;
+            padding:0rem;
+        }
+        th{
+            padding-bottom:0.5rem;
+            padding-left:0.5rem;
+            padding-right:0.5rem;
+            font-size:0.9rem;
+        }
+        td{
+            font-size:0.9rem;
+            padding-bottom:0.5rem;
+        }
+        .td-medium{
+            width:25%;
+        }
+        .td-large{
+            width:50%;
+        }
+        .single-menu-grid{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin:0rem 0rem;
+        }
+        
+        .single-menu-image-container{
+            height:64vh;
+            width:200%;
+            .single-menu-image{
+                object-fit:contain;
+            }
+        }
+        .single-menu-text{
+            width:150%;
+            padding:2rem;
+            margin-left:2rem;
+            h4{
+                font-size:1.9rem;
+            }
+            p{
+                line-height: 1.4rem;
+                align-items: center;
+            }
+        
+            .single-menu-contact{
+               padding:0.9rem 2rem; 
+               font-size:0.8rem;
+            }
+        }
+     }
+  
+   
+}
+@media (min-width: 371px) and (max-width: 500px) {
+ #single-menu-page{
+    th{
+        padding-bottom:0.5rem;
+        padding-left:0.5rem;
+        font-size:0.9rem;
+    }
+    td{
+        font-size:0.9rem;
+        padding-bottom:0.5rem;
+    }
+    .td-medium{
+        width:25%;
+    }
+    .td-large{
+        width:50%;
+    }
+    .single-menu-grid{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin:0rem 0rem;
+    }
+    
+    .single-menu-image-container{
+        height:64vh;
+        width:150%;
+        .single-menu-image{
+            object-fit:contain;
+        }
+    }
+    .single-menu-text{
+        width:100%;
+        padding:2rem;
+        h4{
+            font-size:1.9rem;
+        }
+        p{
+            line-height: 1.4rem;
+            align-items: center;
+        }
+    
+        .single-menu-contact{
+           padding:1rem 4rem; 
+        }
     }
  }
- // Large devices (desktops, 992px and up)
- @media (min-width: 992px) and (max-width: 1199px) {
+  
+}
+@media (min-width: 501px) and (max-width: 540px) {
+    #single-menu-page{
+        th{
+            padding-bottom:0.5rem;
+            padding-left:0.5rem;
+            font-size:0.9rem;
+        }
+        td{
+            font-size:0.9rem;
+            padding-bottom:0.5rem;
+        }
+        .td-medium{
+            width:25%;
+        }
+        .td-large{
+            width:50%;
+        }
+        .single-menu-grid{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin:0rem 0rem;
+        }
+        
+        .single-menu-image-container{
+            height:64vh;
+            width:150%;
+            .single-menu-image{
+                object-fit:contain;
+            }
+        }
+        .single-menu-text{
+            width:100%;
+            padding:2rem;
+            h4{
+                font-size:1.9rem;
+            }
+            p{
+                line-height: 1.4rem;
+                align-items: center;
+            }
+        
+            .single-menu-contact{
+               padding:1rem 4rem; 
+            }
+        }
+     }
+  
+}
+@media (min-width: 541px) and (max-width: 767px) {
+    #single-menu-page{
+        th{
+            padding-bottom:0.5rem;
+            padding-left:0.5rem;
+            font-size:0.9rem;
+        }
+        td{
+            font-size:0.9rem;
+            padding-bottom:0.5rem;
+        }
+        .td-medium{
+            width:25%;
+        }
+        .td-large{
+            width:50%;
+        }
+        .single-menu-grid{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin:0rem 0rem;
+        }
+        
+        .single-menu-image-container{
+            height:64vh;
+            width:150%;
+            .single-menu-image{
+                object-fit:contain;
+            }
+        }
+        .single-menu-text{
+            width:100%;
+            padding:2rem;
+            h4{
+                font-size:1.9rem;
+            }
+            p{
+                line-height: 1.4rem;
+                align-items: center;
+            }
+        
+            .single-menu-contact{
+               padding:1rem 4rem; 
+            }
+        }
+     }
  
+}
+  
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 900px) {
+    #single-menu-page{
+        th{
+            padding-bottom:0.5rem;
+            padding-left:0.5rem;
+            font-size:0.9rem;
+        }
+        td{
+            font-size:0.9rem;
+            padding-bottom:0.5rem;
+        }
+        .td-medium{
+            width:25%;
+        }
+        .td-large{
+            width:50%;
+        }
+        .single-menu-grid{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin:0rem 0rem;
+        }
+        
+        .single-menu-image-container{
+            height:64vh;
+            width:150%;
+            .single-menu-image{
+                object-fit:contain;
+            }
+        }
+        .single-menu-text{
+            width:100%;
+            padding:2rem;
+            h4{
+                font-size:1.9rem;
+            }
+            p{
+                line-height: 1.4rem;
+                align-items: center;
+            }
+        
+            .single-menu-contact{
+               padding:1rem 4rem; 
+            }
+        }
+     }
+}
+@media (min-width: 901px) and (max-width: 991px) {
+    #single-menu-page{
+        th{
+            padding-bottom:0.5rem;
+            padding-left:0.5rem;
+            font-size:0.9rem;
+        }
+        td{
+            font-size:0.9rem;
+            padding-bottom:0.5rem;
+        }
+        .td-medium{
+            width:25%;
+        }
+        .td-large{
+            width:50%;
+        }
+        .single-menu-grid{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin:0rem 0rem;
+        }
+        
+        .single-menu-image-container{
+            height:64vh;
+            width:150%;
+            .single-menu-image{
+                object-fit:contain;
+            }
+        }
+        .single-menu-text{
+            width:100%;
+            padding:2rem;
+            h4{
+                font-size:1.9rem;
+            }
+            p{
+                line-height: 1.4rem;
+                align-items: center;
+            }
+        
+            .single-menu-contact{
+               padding:1rem 4rem; 
+            }
+        }
+     }
+}
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1099px) {
+    #single-menu-page{
+        
+        .single-menu-image-container{
+            .single-menu-image{
+                object-fit:contain;
+            }
+        }
+
+     }
+}
+@media (min-width: 1100px) and (max-width: 1119px) {
+    #single-menu-page{
+        
+        .single-menu-image-container{
+            .single-menu-image{
+                object-fit:contain;
+            }
+        }
+
+     }
+}
+@media (min-width: 1120px) and (max-width: 1199px) {
+    #single-menu-page{
+        
+        .single-menu-image-container{
+            .single-menu-image{
+                object-fit:contain;
+            }
+        }
+
+     }
+}
+  
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) and (max-width: 1399px) {
+    #single-menu-page{
+        
+        .single-menu-image-container{
+            .single-menu-image{
+                object-fit:contain;
+            }
+        }
+
+     }
  }
- 
- // Extra large devices (large desktops, 1200px and up)
- @media (min-width: 1200px) { }
+@media (min-width: 1400px) and (max-width: 1500px) {
+    #single-menu-page{
+        
+        .single-menu-image-container{
+            .single-menu-image{
+                object-fit:contain;
+            }
+        }
+
+     }
+}

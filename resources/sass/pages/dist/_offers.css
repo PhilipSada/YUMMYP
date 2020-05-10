@@ -57,18 +57,3 @@
 #offers-page form .form-group button[type="submit"]:hover {
   background: rgba(0, 0, 0, 0.925);
 }
-
-@media (min-width: 0px) and (max-width: 767px) {
-  #offers-page {
-    padding: 20px;
-  }
-  #offers-page h1 {
-    font-size: 2rem;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-  #offers-page {
-    padding: 20px;
-  }
-}

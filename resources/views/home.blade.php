@@ -7,8 +7,8 @@
           <div class="hero-text">
               <h1 class="intro">Discover your taste</h1>
               <h1 class="hero-title">Eat Delicious Burgers</h1>
-              <p class="details">We are glad to introduce more burgers to our menu as<br> we noticed some of our customers needed new<br> burgers
-                in the menu and at yummy p, we love <br>to satisfy every customer</p>
+              <p class="details">We are glad to introduce more burgers to our menu as we noticed some of our customers needed new burgers
+                in the menu and at yummy p, we love to satisfy every customer</p>
               <a href="/reservations" class="booking">Book a table</a>
           </div>
           <div class="social-icons">
