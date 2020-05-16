@@ -5,13 +5,15 @@
         <!-- Search Engine Optimization by Rank Math - https://s.rankmath.com/home -->
         <meta name="description" content="{{$settings['seo']->description}}">
         <meta name="robots" content="follow,index,max-snippet:-1,max-video-preview:-1,max-image-preview:large">
+        <meta name="image_src" content="http://yummiep.com/images/preview.png" />
+        <meta name="image_url" content="http://yummiep.com/images/preview.png" />
         {{-- <link rel="canonical" href="https://codingphase.com/"> --}}
         <meta property="og:locale" content="en_US">
         <meta property="og:type" content="website">
         <meta property="og:title" content="@yield('title')">
-        <meta property='og:image' content="http://yummiep.com/images/restaurantCover.png">        
+        <meta property='og:image' content="http://yummiep.com/images/preview.png">        
         <meta property="og:description" content="{{$settings['seo']->description}}">
-        <meta property="og:url" content="https://yummiep.com/">
+        <meta property="og:url" content="http://yummiep.com/">
         <meta property="og:site_name" content="{{$settings['general']->site_title}}">
         <meta name="twitter:card" content="summary_large_image">
         <meta name="twitter:title" content="@yield('title')">
