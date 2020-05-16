@@ -5,13 +5,13 @@
         <!-- Search Engine Optimization by Rank Math - https://s.rankmath.com/home -->
         <meta name="description" content="{{$settings['seo']->description}}">
         <meta name="robots" content="follow,index,max-snippet:-1,max-video-preview:-1,max-image-preview:large">
-        <meta name="image_src" content="https://yummiep.com/images/preview.png" >
-        <meta name="image_url" content="https://yummiep.com/images/preview.png" >
-        {{-- <link rel="canonical" href="https://codingphase.com/"> --}}
+        <meta name="image_src" content="https://yummiep.com/preview.png" >
+        <meta name="image_url" content="https://yummiep.com/preview.png" >
+        <link rel="canonical" href="https://yummiep.com/">
         <meta property="og:locale" content="en_US">
         <meta property="og:type" content="website">
         <meta property="og:title" content="@yield('title')">
-        <meta property='og:image' content="https://yummiep.com/images/preview.png">
+        <meta property='og:image' content="https://yummiep.com/preview.png">
         <meta property="og:image:type" content="image/png">        
         <meta property="og:image:width" content="1200">        
         <meta property="og:image:height" content="630">                
