@@ -9,9 +9,9 @@
         <meta property="og:locale" content="en_US">
         <meta property="og:type" content="website">
         <meta property="og:title" content="@yield('title')">
-        <meta property='og:image' content="/images/restaurantCover.png">        
+        <meta property='og:image' content="https://yummiep.com/images/restaurantCover.png">        
         <meta property="og:description" content="{{$settings['seo']->description}}">
-        {{-- <meta property="og:url" content="https://codingphase.com/"> --}}
+        <meta property="og:url" content="https://yummiep.com/">
         <meta property="og:site_name" content="{{$settings['general']->site_title}}">
         <meta name="twitter:card" content="summary_large_image">
         <meta name="twitter:title" content="@yield('title')">
