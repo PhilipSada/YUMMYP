@@ -18,6 +18,9 @@
         <meta property="og:description" content="{{$settings['seo']->description}}">
         <meta property="og:url" content="https://yummiep.com/"/>
         <meta property="og:site_name" content="{{$settings['general']->site_title}}">
+        <meta itemprop="name" content="Yummie P">
+        <meta itemprop="image" content="https://yummiep.com/preview.jpg">
+        <meta itemprop="description" content="{{$settings['seo']->description}}">
         <meta name="twitter:card" content="summary_large_image">
         <meta name="twitter:title" content="@yield('title')">
         <meta name="twitter:description" content="{{$settings['seo']->description}}">
