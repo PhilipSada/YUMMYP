@@ -38,49 +38,10 @@ footer{
     color:black;
 }
 
-@media (min-width:0px) and (max-width:370px){
-    .first-footer{
-        p{
-            font-size:0.9rem;
-        }
-        
-    }
-    .social-icon-footer{
-        font-size:12px;
-    
-       
-    }
-}
-@media (min-width: 371px) and (max-width: 500px) {
-    .first-footer{
-        p{
-            font-size:0.9rem;
-        }
-        
-    }
-    .social-icon-footer{
-        font-size:12px;
-    
-       
-    }
-  
-}
-@media (min-width: 501px) and (max-width: 540px) {
-    .first-footer{
-        p{
-            font-size:0.9rem;
-        }
-        
-    }
-    .social-icon-footer{
-        font-size:12px;
-    
-       
-    }
-  
-}
-@media (min-width: 541px) and (max-width: 767px) {
 
+
+
+@media (max-width:599px){
     .first-footer{
         p{
             font-size:0.9rem;
@@ -93,9 +54,7 @@ footer{
        
     }
 }
-  
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) and (max-width: 900px) {
+@media (min-width:600px){
     .first-footer{
         p{
             font-size:0.9rem;
@@ -108,34 +67,23 @@ footer{
        
     }
 }
-@media (min-width: 901px) and (max-width: 991px) {
+@media (min-width:900px){
+  
+}
+@media (min-width:1200px){
     .first-footer{
         p{
-            font-size:0.9rem;
+            font-size:1rem;
         }
         
     }
     .social-icon-footer{
-        font-size:12px;
+        font-size:15px;
     
        
     }
 }
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) and (max-width: 1099px) {
+@media (min-width:1500px){
   
 }
-@media (min-width: 1100px) and (max-width: 1119px) {
-   
-}
-@media (min-width: 1120px) and (max-width: 1199px) {
-   
-}
-  
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) and (max-width: 1399px) {
-  
- }
-@media (min-width: 1400px) and (max-width: 1500px) {
-  
-}
+

@@ -50,7 +50,8 @@
     }
  
 }
-@media (min-width:0px) and (max-width:370px){
+
+@media (max-width:599px){
     #reservations-page{
         padding-left:80px;
         padding-right:80px;
@@ -62,57 +63,23 @@
             width:120%;
         }
     }
-  
-   
 }
-@media (min-width: 371px) and (max-width: 500px) {
-
-    #reservations-page{
-        padding-bottom:900px;
-        .content-box{
-            width:120%;
-        }
-    }
-}
-@media (min-width: 501px) and (max-width: 540px) {
-    #reservations-page{
-        padding-bottom:900px;
-        .content-box{
-            width:120%;
-        }
-    }
-  
-}
-@media (min-width: 541px) and (max-width: 767px) {
-    
+@media (min-width:600px){
     #reservations-page{
         padding-bottom:900px;
 
     }
 }
-  
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) and (max-width: 900px) {
-  
-}
-@media (min-width: 901px) and (max-width: 991px) {
+@media (min-width:900px){
+    #reservations-page{
+        padding-bottom:0px;
 
+    }
 }
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) and (max-width: 1099px) {
+@media (min-width:1200px){
    
 }
-@media (min-width: 1100px) and (max-width: 1119px) {
-   
-}
-@media (min-width: 1120px) and (max-width: 1199px) {
-   
-}
+@media (min-width:1500px){
   
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) and (max-width: 1399px) {
-    
- }
-@media (min-width: 1400px) and (max-width: 1500px) {
-   
 }
+
