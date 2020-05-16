@@ -12,6 +12,7 @@
         <meta property="og:type" content="website">
         <meta property="og:title" content="@yield('title')">
         <meta property='og:image:url' content="https://yummiep.com/images/preview.png">        
+        <meta property='og:image:secure_url' content="https://yummiep.com/images/preview.png">        
         <meta property="og:description" content="{{$settings['seo']->description}}">
         <meta property="og:url" content="https://yummiep.com/">
         <meta property="og:site_name" content="{{$settings['general']->site_title}}">
