@@ -8,12 +8,14 @@
         <meta name="image_src" content="https://yummiep.com/images/preview.png" >
         <meta name="image_url" content="https://yummiep.com/images/preview.png" >
         {{-- <link rel="canonical" href="https://codingphase.com/"> --}}
-        <meta property="og:locale" content="en_US"/>
-        <meta property="og:type" content="website"/>
-        <meta property="og:title" content="@yield('title')"/>
-        <meta property='og:image' content="http://yummiep.com/public/images/preview.png"/>        
-        <meta property='og:image:secure_url' content="https://yummiep.com/public/images/preview.png"/>        
-        <meta property="og:description" content="{{$settings['seo']->description}}"/>
+        <meta property="og:locale" content="en_US">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="@yield('title')">
+        <meta property='og:image' content="https://yummiep.com/images/preview.png">
+        <meta property="og:image:type" content="image/png">        
+        <meta property="og:image:width" content="1895">        
+        <meta property="og:image:height" content="940">                
+        <meta property="og:description" content="{{$settings['seo']->description}}">
         <meta property="og:url" content="https://yummiep.com/"/>
         <meta property="og:site_name" content="{{$settings['general']->site_title}}">
         <meta name="twitter:card" content="summary_large_image">
