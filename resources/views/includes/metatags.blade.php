@@ -11,7 +11,7 @@
         <meta property="og:locale" content="en_US">
         <meta property="og:type" content="website">
         <meta property="og:title" content="@yield('title')">
-        <meta property='og:image' content="http://yummiep.com/images/preview.png">        
+        <meta prefix="og: http://ogp.me/ns#" property='og:image' content="http://yummiep.com/images/preview.png">        
         <meta property="og:description" content="{{$settings['seo']->description}}">
         <meta property="og:url" content="http://yummiep.com/">
         <meta property="og:site_name" content="{{$settings['general']->site_title}}">
