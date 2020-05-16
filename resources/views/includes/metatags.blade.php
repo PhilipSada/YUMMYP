@@ -9,7 +9,7 @@
         <meta property="og:locale" content="en_US">
         <meta property="og:type" content="website">
         <meta property="og:title" content="@yield('title')">
-        <meta property='og:image' content="https://yummiep.com/restaurantCover.png">        
+        <meta property='og:image' content="//yummiep.com/restaurantCover.png">        
         <meta property="og:description" content="{{$settings['seo']->description}}">
         <meta property="og:url" content="https://yummiep.com/">
         <meta property="og:site_name" content="{{$settings['general']->site_title}}">
@@ -17,7 +17,7 @@
         <meta name="twitter:title" content="@yield('title')">
         <meta name="twitter:description" content="{{$settings['seo']->description}}">
          <!-- CSRF Token -->
-       <meta name="csrf-token" content="{{ csrf_token() }}">
+        <meta name="csrf-token" content="{{ csrf_token() }}">
 
         <!-- Fonts -->
         <link rel="stylesheet" href="{{ asset('css/app.css') }}">
