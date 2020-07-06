@@ -19,7 +19,7 @@
       </div>
       <div class="split right-split">
           <div class="right-split-image-container">
-              <img src="/images/burgercover.png" class="right-split-image">
+              <img src="/images/burgercover.jpg" class="right-split-image">
           </div>
           {{--  <div class="right-split-image-container-2"></div>  --}}
           <div class="right-split-side-bar"></div>
