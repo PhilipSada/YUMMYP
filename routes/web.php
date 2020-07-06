@@ -2,8 +2,9 @@
 use App\GeneralSetting;
 use App\SeoSetting;
 use App\SocialAccountsSetting;
-
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+use Illuminate\View\View;
 
 /*
 |--------------------------------------------------------------------------

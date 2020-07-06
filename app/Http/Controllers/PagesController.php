@@ -45,7 +45,7 @@ class PagesController extends Controller
             'gueststotal'=>request('gueststotal'),
             'time'=>request('time')
         ];
-        Mail::to($request->email)->send(new ReservationMail($content));
+        // Mail::to($request->email)->send(new ReservationMail($content));
 
         $reservation = new Reservation();
         $reservation->firstname = request('firstname');
@@ -100,7 +100,7 @@ class PagesController extends Controller
 
         ];
      
-        Mail::to($recipients)->send(new Contact($content));
+        // Mail::to($recipients)->send(new Contact($content));
 
         $request->session()->put('enquiry', 'enquiry-sent');
 
