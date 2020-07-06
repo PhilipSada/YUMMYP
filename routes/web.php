@@ -89,7 +89,7 @@ Route::get('/admin/settings/social-accounts', 'admin\SettingController@socialAcc
 Route::put('/admin/settings/social-accounts', 'admin\SettingController@saveSocialAccounts')->middleware('role:Admin');
 
 
-Auth::routes();
+// Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
