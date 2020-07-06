@@ -91,7 +91,7 @@ Route::put('/admin/settings/social-accounts', 'admin\SettingController@saveSocia
 
 // Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+// Route::get('/home', 'HomeController@index')->name('home');
 
 
 // View::composer(['home','pages/about', 'pages/contact', 'pages/offers', 'pages/thanks', 
