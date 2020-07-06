@@ -4,6 +4,7 @@ use App\SeoSetting;
 use App\SocialAccountsSetting;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\View;
 
 
 /*
