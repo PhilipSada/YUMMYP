@@ -94,16 +94,16 @@ Route::put('/admin/settings/social-accounts', 'admin\SettingController@saveSocia
 Route::get('/home', 'HomeController@index')->name('home');
 
 
-View::composer(['home','pages/about', 'pages/contact', 'pages/offers', 'pages/thanks', 
-'pages/reservation-confirmation','pages/reservations', 'menu/all-categories', 'menu/single-menu', 'mail/mail-confirmation'], function ($view) {
-    $generalSettings = GeneralSetting::find(1);
-    $socialAccountSettings = SocialAccountsSetting::find(1);
-    $seoSettings = SeoSetting::find(1);
+// View::composer(['home','pages/about', 'pages/contact', 'pages/offers', 'pages/thanks', 
+// 'pages/reservation-confirmation','pages/reservations', 'menu/all-categories', 'menu/single-menu', 'mail/mail-confirmation'], function ($view) {
+//     $generalSettings = GeneralSetting::find(1);
+//     $socialAccountSettings = SocialAccountsSetting::find(1);
+//     $seoSettings = SeoSetting::find(1);
 
-    $view->with('settings', [
-        "general"=>$generalSettings,
-        "social"=>$socialAccountSettings,
-        "seo"=>$seoSettings
+//     $view->with('settings', [
+//         "general"=>$generalSettings,
+//         "social"=>$socialAccountSettings,
+//         "seo"=>$seoSettings
 
-    ]);
-});
+//     ]);
+// });
